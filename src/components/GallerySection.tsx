@@ -1,18 +1,21 @@
 import { motion } from 'motion/react';
 import { Flame, Sparkles, CheckSquare, Layers } from 'lucide-react';
 
+import weldingBg from '../assets/images/welding_background_1784545356543.jpg';
+import gougingBg from '../assets/images/gouging_background_1784545377668.jpg';
+
 export default function GallerySection() {
   const images = [
     {
       title: 'Soldagem Industrial Avançada',
       description: 'Treinamento completo nos processos TIG, MIG/MAG e Eletrodo Revestido para atuar nas indústrias mais exigentes do Japão.',
-      url: '/src/assets/images/welding_background_1784545356543.jpg',
+      url: weldingBg,
       badge: 'PROCESSO PRINCIPAL',
     },
     {
       title: 'Goivagem (Carbon Arc Gouging)',
       description: 'Aprenda a técnica de remoção rápida de soldas com defeito, corte térmico e preparação de juntas pesadas (Gouging).',
-      url: '/src/assets/images/gouging_background_1784545377668.jpg',
+      url: gougingBg,
       badge: 'ESPECIALIZAÇÃO ALTA RENDA',
     },
   ];

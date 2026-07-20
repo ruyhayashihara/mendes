@@ -1,4 +1,5 @@
 import { Testimonial, CourseModule, FAQItem, InstructorProfile } from './types';
+import instructorPhoto from './assets/images/regenerated_image_1784544660370.png';
 
 export const STATS = [
   { value: '¥1.600 - ¥2.500', label: 'Salário Médio por Hora', desc: 'Praticamente o dobro de uma fábrica comum' },
@@ -132,7 +133,7 @@ export const INSTRUCTOR: InstructorProfile = {
   name: 'Prof. William Mendes',
   role: 'Fundador & Instrutor Principal',
   experienceYears: 18,
-  photoUrl: '/src/assets/images/regenerated_image_1784544660370.png',
+  photoUrl: instructorPhoto,
   certifications: [
     'Certificação JWES Grau Especial (Japan Welding Engineering Society)',
     'Ex-Supervisor Chefe de Soldagem e Controle de Qualidade na Mitsubishi Heavy Industries',

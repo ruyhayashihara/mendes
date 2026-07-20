@@ -2,13 +2,13 @@ import { motion } from 'motion/react';
 import { Flame, CheckCircle, ShieldCheck, ArrowRight, Sparkles } from 'lucide-react';
 import { STATS } from '../data';
 
+import heroImgSrc from '../assets/images/hero_welding_japan_1784542489665.jpg';
+
 interface HeroProps {
   onOpenLeadForm: () => void;
 }
 
 export default function Hero({ onOpenLeadForm }: HeroProps) {
-  // Use our generated hero image path
-  const heroImgSrc = '/src/assets/images/hero_welding_japan_1784542489665.jpg';
 
   const containerVariants = {
     hidden: { opacity: 0 },
