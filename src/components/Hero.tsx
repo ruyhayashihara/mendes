@@ -134,7 +134,7 @@ export default function Hero({ onOpenLeadForm }: HeroProps) {
                 referrerPolicy="no-referrer"
               />
               {/* Overlay with subtle steel gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent" />
 
               {/* Floating Badge (Social Proof) */}
               <div className="absolute bottom-4 left-4 right-4 bg-zinc-950/90 backdrop-blur-md border border-zinc-800/60 p-4 rounded-xl flex items-center gap-3">
