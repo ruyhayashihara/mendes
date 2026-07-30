@@ -59,14 +59,14 @@ export default function App() {
         <div className="fixed bottom-6 right-6 z-40">
           <button
             onClick={handleOpenLeadModal}
-            className="flex items-center gap-2 bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-xs sm:text-sm px-5 py-4 rounded-full shadow-[0_8px_30px_rgba(255,107,0,0.4)] transition-all transform hover:scale-105 active:scale-95 group cursor-pointer"
+            className="flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-display font-black text-xs sm:text-sm px-5 py-4 rounded-full shadow-[0_8px_30px_rgba(37,211,102,0.4)] transition-all transform hover:scale-105 active:scale-95 group cursor-pointer"
             title="Fale conosco agora"
           >
             <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-black opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-black"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-white"></span>
             </span>
-            <MessageCircle className="w-4.5 h-4.5 fill-black shrink-0" />
+            <MessageCircle className="w-4.5 h-4.5 fill-white shrink-0" />
             <span className="tracking-wide uppercase">MATRÍCULAS ABERTAS</span>
           </button>
         </div>

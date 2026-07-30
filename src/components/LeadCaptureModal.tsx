@@ -357,7 +357,7 @@ Fico no aguardo do contato! Obrigado.`;
 
                       <button
                         onClick={handleWhatsAppRedirect}
-                        className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-display font-bold text-sm py-4 rounded-xl shadow-[0_4px_20px_rgba(16,185,129,0.35)] transition-all flex items-center justify-center gap-2 cursor-pointer"
+                        className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white font-display font-bold text-sm py-4 rounded-xl shadow-[0_4px_20px_rgba(37,211,102,0.35)] transition-all flex items-center justify-center gap-2 cursor-pointer"
                       >
                         <PhoneCall className="w-4.5 h-4.5 fill-white" />
                         <span>ABRIR WHATSAPP DO PROFESSOR</span>
