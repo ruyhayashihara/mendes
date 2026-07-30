@@ -1,0 +1,621 @@
+/* ============================================================
+   ESCOLA DE SOLDA NO JAPÃO — Custom CSS para Elementor Pro
+   ============================================================
+   Instruções: Cole este CSS inteiro em:
+   WP-Admin > Elementor > Configurações > CSS Personalizado
+   OU adicione via Aparência > Personalizar > CSS Adicional
+   ============================================================ */
+
+/* ===================== GOOGLE FONTS ===================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* ===================== CSS VARIABLES ===================== */
+:root {
+  --esj-primary: #ff6b00;
+  --esj-secondary: #f59e0b;
+  --esj-accent: #fbbf24;
+  --esj-dark: #0a0a0c;
+  --esj-darker: #070709;
+  --esj-darkest: #050507;
+  --esj-text-light: #f4f4f5;
+  --esj-text-muted: #a1a1aa;
+  --esj-text-dim: #71717a;
+  --esj-border: #27272a;
+  --esj-border-light: rgba(39,39,42,0.8);
+  --esj-font-display: 'Space Grotesk', sans-serif;
+  --esj-font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --esj-font-mono: 'JetBrains Mono', monospace;
+}
+
+/* ===================== GLOBAL BODY ===================== */
+body.elementor-page,
+body.elementor-kit {
+  background-color: var(--esj-dark);
+  color: var(--esj-text-light);
+  font-family: var(--esj-font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ===================== TYPOGRAPHY HELPERS ===================== */
+.esj-font-display {
+  font-family: var(--esj-font-display) !important;
+}
+.esj-font-mono {
+  font-family: var(--esj-font-mono) !important;
+}
+.esj-font-body {
+  font-family: var(--esj-font-body) !important;
+}
+
+/* ===================== GRADIENT TEXT ===================== */
+.esj-gradient-text {
+  background: linear-gradient(to right, var(--esj-primary), var(--esj-secondary), var(--esj-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===================== GLOW EFFECTS ===================== */
+.esj-glow-hover {
+  transition: all 0.3s ease;
+}
+.esj-glow-hover:hover {
+  box-shadow: 0 0 20px rgba(255, 107, 0, 0.4);
+}
+
+.esj-shadow-primary {
+  box-shadow: 0 6px 24px rgba(255, 107, 0, 0.4);
+}
+
+.esj-shadow-primary-sm {
+  box-shadow: 0 4px 14px rgba(255, 107, 0, 0.35);
+}
+
+.esj-shadow-primary-lg {
+  box-shadow: 0 8px 30px rgba(255, 107, 0, 0.4);
+}
+
+.esj-shadow-emerald {
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.35);
+}
+
+/* ===================== DECORATIVE RADIAL GLOWS ===================== */
+.esj-glow-bg::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 107, 0, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(120px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.esj-glow-top-right::before {
+  top: 0;
+  right: 0;
+}
+
+.esj-glow-bottom-left::before {
+  bottom: 80px;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(234, 88, 12, 0.05) 0%, transparent 70%);
+  filter: blur(100px);
+}
+
+.esj-glow-center::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255, 107, 0, 0.05) 0%, transparent 70%);
+  filter: blur(140px);
+}
+
+/* ===================== PILL BADGES ===================== */
+.esj-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 107, 0, 0.1);
+  border: 1px solid rgba(255, 107, 0, 0.2);
+  color: var(--esj-primary);
+  font-family: var(--esj-font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 9999px;
+}
+
+.esj-badge-dark {
+  background: var(--esj-dark);
+  border: 1px solid var(--esj-border);
+  color: var(--esj-text-muted);
+}
+
+.esj-badge-primary-solid {
+  background: var(--esj-primary);
+  color: #000;
+  font-family: var(--esj-font-mono);
+  font-weight: 900;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+/* ===================== CARD STYLES ===================== */
+.esj-card {
+  background: rgba(9, 9, 11, 0.4);
+  border: 1px solid var(--esj-border-light);
+  border-radius: 16px;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.esj-card-premium {
+  background: linear-gradient(to bottom, #18181b, #09090b);
+  border: 2px solid var(--esj-primary);
+  border-radius: 16px;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(255, 107, 0, 0.15);
+}
+
+.esj-card-dark {
+  background: rgba(9, 9, 11, 0.6);
+  border: 1px solid var(--esj-border-light);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+}
+
+/* ===================== BUTTONS ===================== */
+.esj-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--esj-primary);
+  color: #000;
+  font-family: var(--esj-font-display);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 14px 32px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 24px rgba(255, 107, 0, 0.4);
+  text-decoration: none;
+}
+.esj-btn-primary:hover {
+  background: var(--esj-secondary);
+  transform: translateY(-2px);
+}
+
+.esj-btn-primary-full {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--esj-primary);
+  color: #000;
+  font-family: var(--esj-font-display);
+  font-weight: 900;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 14px 24px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(255, 107, 0, 0.3);
+  text-decoration: none;
+}
+.esj-btn-primary-full:hover {
+  background: var(--esj-secondary);
+  transform: translateY(-2px);
+}
+
+/* ===================== FLOATING CTA BUTTON ===================== */
+.esj-floating-cta {
+  position: fixed !important;
+  bottom: 24px;
+  right: 24px;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--esj-primary);
+  color: #000;
+  font-family: var(--esj-font-display);
+  font-weight: 900;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 16px 20px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 30px rgba(255, 107, 0, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.esj-floating-cta:hover {
+  background: var(--esj-secondary);
+  transform: scale(1.05);
+}
+
+/* Pulsing dot inside floating CTA */
+.esj-pulse-dot {
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+.esj-pulse-dot::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #000;
+  border-radius: 50%;
+  animation: esj-ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+  opacity: 0.75;
+}
+.esj-pulse-dot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #000;
+  border-radius: 50%;
+}
+
+@keyframes esj-ping {
+  0% { transform: scale(1); opacity: 0.75; }
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+
+/* ===================== STATS BAR ===================== */
+.esj-stats-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  background: rgba(9, 9, 11, 0.6);
+  border: 1px solid var(--esj-border-light);
+  padding: 32px;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+  .esj-stats-bar {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 24px;
+  }
+}
+
+.esj-stat-item {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-right: 1px solid rgba(39, 39, 42, 0.6);
+  padding-right: 8px;
+}
+.esj-stat-item:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+@media (max-width: 768px) {
+  .esj-stat-item {
+    text-align: center;
+  }
+  .esj-stat-item:nth-child(2) {
+    border-right: none;
+  }
+}
+
+.esj-stat-value {
+  font-family: var(--esj-font-display);
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--esj-primary);
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+  .esj-stat-value { font-size: 30px; }
+}
+
+.esj-stat-label {
+  font-family: var(--esj-font-body);
+  font-weight: 600;
+  font-size: 13px;
+  color: #fff;
+  margin-top: 4px;
+}
+
+.esj-stat-desc {
+  font-family: var(--esj-font-body);
+  font-size: 11px;
+  color: var(--esj-text-muted);
+  margin-top: 4px;
+  max-width: 180px;
+}
+
+/* ===================== IMAGE OVERLAYS ===================== */
+.esj-img-container {
+  position: relative;
+  border-radius: 16px;
+  border: 1px solid var(--esj-border);
+  background: #18181b;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.esj-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.esj-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent, transparent);
+  pointer-events: none;
+}
+
+.esj-img-hover-zoom img {
+  transition: transform 0.7s ease;
+}
+.esj-img-hover-zoom:hover img {
+  transform: scale(1.05);
+}
+
+/* ===================== FLOATING IMAGE BADGE ===================== */
+.esj-img-badge {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  background: rgba(9, 9, 11, 0.9);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(39, 39, 42, 0.6);
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ===================== COMPARISON SECTION ===================== */
+.esj-comparison-negative {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+.esj-comparison-negative:hover {
+  opacity: 1;
+}
+
+/* ===================== INSTRUCTOR SECTION ===================== */
+.esj-instructor-img-glow {
+  position: relative;
+}
+.esj-instructor-img-glow::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 107, 0, 0.2);
+  border-radius: 24px;
+  filter: blur(20px);
+  z-index: -1;
+  transform: translate(8px, 8px);
+  animation: esj-pulse-slow 3s ease-in-out infinite;
+}
+
+@keyframes esj-pulse-slow {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+/* ===================== TESTIMONIAL CARDS ===================== */
+.esj-testimonial-card {
+  position: relative;
+  transition: border-color 0.3s ease;
+}
+.esj-testimonial-card:hover {
+  border-color: rgba(63, 63, 70, 0.8);
+}
+
+.esj-quote-watermark {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  font-size: 48px;
+  color: rgba(24, 24, 27, 0.4);
+  font-family: Georgia, serif;
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+}
+
+/* ===================== FAQ ACCORDION OVERRIDES ===================== */
+.esj-faq .elementor-accordion {
+  border: none !important;
+}
+
+.esj-faq .elementor-accordion-item {
+  border: 1px solid var(--esj-border-light) !important;
+  border-radius: 16px !important;
+  margin-bottom: 16px !important;
+  background: rgba(9, 9, 11, 0.4) !important;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.esj-faq .elementor-accordion-item:hover {
+  border-color: rgba(63, 63, 70, 0.8) !important;
+}
+
+.esj-faq .elementor-tab-title {
+  padding: 20px 24px !important;
+  border: none !important;
+  background: transparent !important;
+  font-family: var(--esj-font-body) !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  color: #fff !important;
+}
+
+.esj-faq .elementor-tab-title.elementor-active {
+  background: rgba(24, 24, 27, 0.6) !important;
+  border-bottom: 1px solid rgba(255, 107, 0, 0.6) !important;
+}
+
+.esj-faq .elementor-tab-content {
+  padding: 16px 24px 24px !important;
+  border-top: 1px solid rgba(39, 39, 42, 0.6) !important;
+  font-family: var(--esj-font-body) !important;
+  font-size: 13px !important;
+  color: var(--esj-text-muted) !important;
+  line-height: 1.7 !important;
+}
+
+.esj-faq .elementor-accordion-icon {
+  background: #18181b !important;
+  color: var(--esj-text-muted) !important;
+  padding: 6px !important;
+  border-radius: 8px !important;
+}
+
+.esj-faq .elementor-active .elementor-accordion-icon {
+  background: var(--esj-primary) !important;
+  color: #000 !important;
+}
+
+/* ===================== TABS OVERRIDES (CURRICULUM) ===================== */
+.esj-tabs .elementor-tabs {
+  border: none !important;
+}
+
+.esj-tabs .elementor-tab-title {
+  background: rgba(9, 9, 11, 0.4) !important;
+  border: 1px solid var(--esj-border-light) !important;
+  border-radius: 12px !important;
+  padding: 16px !important;
+  margin-bottom: 12px !important;
+  font-family: var(--esj-font-body) !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  color: var(--esj-text-muted) !important;
+  transition: all 0.3s ease;
+}
+
+.esj-tabs .elementor-tab-title:hover {
+  background: rgba(24, 24, 27, 0.4) !important;
+  border-color: rgba(63, 63, 70, 1) !important;
+  color: #e4e4e7 !important;
+}
+
+.esj-tabs .elementor-tab-title.elementor-active {
+  background: rgba(24, 24, 27, 0.9) !important;
+  border-color: var(--esj-primary) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 20px rgba(255, 107, 0, 0.15);
+}
+
+.esj-tabs .elementor-tab-content {
+  background: rgba(9, 9, 11, 0.7) !important;
+  border: 1px solid var(--esj-border-light) !important;
+  border-radius: 16px !important;
+  padding: 32px !important;
+  font-family: var(--esj-font-body) !important;
+  color: var(--esj-text-muted) !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* ===================== SCROLL ANIMATIONS ===================== */
+.esj-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.esj-fade-in.esj-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.esj-fade-in-left {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.esj-fade-in-left.esj-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.esj-fade-in-right {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.esj-fade-in-right.esj-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ===================== SELECTION COLOR ===================== */
+::selection {
+  background: var(--esj-primary);
+  color: #000;
+}
+
+/* ===================== SCROLLBAR ===================== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--esj-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--esj-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--esj-text-dim);
+}
+
+/* ===================== RESPONSIVE ADJUSTMENTS ===================== */
+@media (max-width: 1024px) {
+  .esj-floating-cta {
+    font-size: 11px;
+    padding: 14px 16px;
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .esj-floating-cta {
+    font-size: 10px;
+    padding: 12px 14px;
+    bottom: 12px;
+    right: 12px;
+  }
+}

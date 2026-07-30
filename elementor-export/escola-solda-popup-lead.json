@@ -1,0 +1,150 @@
+{
+  "version": "0.4",
+  "title": "Escola de Solda - Popup Leads",
+  "type": "popup",
+  "content": [
+    {
+      "id": "p_sect_1",
+      "elType": "section",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#09090b"
+      },
+      "elements": [
+        {
+          "id": "p_col_1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "p_heading_1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Agende sua Consulta Gratuita",
+                "header_size": "h2",
+                "typography_typography": "custom",
+                "typography_font_family": "Space Grotesk",
+                "typography_font_weight": "700",
+                "title_color": "#ffffff",
+                "align": "center"
+              },
+              "elements": []
+            },
+            {
+              "id": "p_text_1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Preencha suas informações para receber detalhes das turmas com desconto na sua província. Nosso consultor entrará em contato via WhatsApp.</p>",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "text_color": "#a1a1aa",
+                "align": "center"
+              },
+              "elements": []
+            },
+            {
+              "id": "p_form_1",
+              "elType": "widget",
+              "widgetType": "form",
+              "settings": {
+                "form_name": "escola_solda_lead_capture",
+                "form_fields": [
+                  {
+                    "_id": "f_name",
+                    "field_type": "text",
+                    "field_label": "Nome Completo",
+                    "placeholder": "Ex: Carlos Silva",
+                    "required": "true",
+                    "width": "100"
+                  },
+                  {
+                    "_id": "f_whatsapp",
+                    "field_type": "tel",
+                    "field_label": "Telefone / WhatsApp (Japão)",
+                    "placeholder": "Ex: 080-1234-5678",
+                    "required": "true",
+                    "width": "100"
+                  },
+                  {
+                    "_id": "f_province",
+                    "field_type": "select",
+                    "field_label": "Província Atual",
+                    "field_options": "Aichi\nGunma\nShizuoka\nMie\nGifu\nSaitama\nKanagawa\nFukui\nShiga\nTochigi\nIbaraki\nOutra Província",
+                    "required": "true",
+                    "width": "50"
+                  },
+                  {
+                    "_id": "f_job",
+                    "field_type": "select",
+                    "field_label": "Setor da Fábrica",
+                    "field_options": "Autopeças / Prensa / Montagem\nAlimentos / Bento / Padaria\nLogística / Embalagem / Kanban\nMoldagem Plástica / Borracha\nConstrução Civil\nMetalúrgica Básica\nDesempregado / Procurando\nOutro",
+                    "required": "true",
+                    "width": "50"
+                  },
+                  {
+                    "_id": "f_time",
+                    "field_type": "select",
+                    "field_label": "Tempo no Japão",
+                    "field_options": "Menos de 1 ano\n1 a 3 anos\n3 a 5 anos\nMais de 5 anos",
+                    "required": "true",
+                    "width": "50"
+                  },
+                  {
+                    "_id": "f_experience",
+                    "field_type": "checkbox",
+                    "field_label": "Experiência",
+                    "field_options": "Já tenho alguma experiência com solda",
+                    "width": "50"
+                  },
+                  {
+                    "_id": "f_notes",
+                    "field_type": "textarea",
+                    "field_label": "Dúvidas ou Observações (Opcional)",
+                    "placeholder": "Ex: Gostaria de saber preços para solda TIG em inox...",
+                    "width": "100"
+                  }
+                ],
+                "submit_actions": [
+                  "email"
+                ],
+                "button_text": "SOLICITAR CONSULTA POR WHATSAPP",
+                "button_size": "lg",
+                "button_align": "stretch",
+                "button_background_color": "#ff6b00",
+                "button_text_color": "#000000",
+                "button_typography_typography": "custom",
+                "button_typography_font_family": "Space Grotesk",
+                "button_typography_font_weight": "bold"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "popup_width": {
+      "unit": "px",
+      "size": 550
+    },
+    "popup_border_radius": {
+      "unit": "px",
+      "top": 16,
+      "right": 16,
+      "bottom": 16,
+      "left": 16,
+      "isLinked": true
+    },
+    "background_background": "classic",
+    "background_color": "#0a0a0c",
+    "close_button_color": "#a1a1aa",
+    "entrance_animation": "zoomIn",
+    "exit_animation": "zoomOut"
+  }
+}

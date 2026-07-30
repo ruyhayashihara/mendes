@@ -1,0 +1,1064 @@
+{
+  "version": "0.4",
+  "title": "Escola de Solda - Landing Page Completa",
+  "type": "page",
+  "content": [
+    {
+      "id": "s_hero",
+      "elType": "section",
+      "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#050507",
+        "min_height": {
+          "unit": "vh",
+          "size": 100
+        },
+        "padding": {
+          "unit": "px",
+          "top": "120",
+          "right": "20",
+          "bottom": "40",
+          "left": "20",
+          "isLinked": false
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        },
+        "border_border": "solid",
+        "border_width": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "1",
+          "left": "0",
+          "isLinked": false
+        },
+        "border_color": "#18181b",
+        "html_tag": "section"
+      },
+      "elements": [
+        {
+          "id": "c_hero_left",
+          "elType": "column",
+          "settings": {
+            "_column_size": 55,
+            "_inline_size": 55,
+            "content_position": "center",
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "40",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "w_hero_badge",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"esj-badge\" style=\"margin-bottom: 24px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z\"/></svg> Diga Adeus às Linhas de Fábrica Comuns</div>"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_hero_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Mude de Vida no Japão: <span class=\"esj-gradient-text\">Torne-se um Soldador Profissional</span> e Multiplique Seus Ganhos",
+                "header_size": "h1",
+                "align": "left",
+                "typography_typography": "custom",
+                "typography_font_family": "Space Grotesk",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 52
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.08
+                },
+                "title_color": "#ffffff"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_hero_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Chega de trabalhar 12 horas em p\u00e9 em servi\u00e7os pesados de haken por sal\u00e1rios baixos. Domine os processos <strong>TIG, MIG/MAG e Eletrodo<\/strong> na pr\u00e1tica, com aulas <strong>100% em portugu\u00eas<\/strong> aos finais de semana, e conquiste vagas de at\u00e9 <strong>\u00a52.500\/h<\/strong>.<\/p>",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16
+                },
+                "text_color": "#a1a1aa",
+                "align": "left",
+                "html_tag": "p"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_hero_trust",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 24px 0; max-width: 440px;\">\n  <div style=\"display: flex; align-items: center; gap: 8px; color: #d4d4d8; font-family: 'JetBrains Mono', monospace; font-size: 12px;\">\n    <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg>\n    <span>Aulas Pr\u00e1ticas Individuais</span>\n  </div>\n  <div style=\"display: flex; align-items: center; gap: 8px; color: #d4d4d8; font-family: 'JetBrains Mono', monospace; font-size: 12px;\">\n    <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg>\n    <span>Prepara\u00e7\u00e3o Licen\u00e7a JWES</span>\n  </div>\n  <div style=\"display: flex; align-items: center; gap: 8px; color: #d4d4d8; font-family: 'JetBrains Mono', monospace; font-size: 12px;\">\n    <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg>\n    <span>Did\u00e1tica 100% em Portugu\u00eas</span>\n  </div>\n  <div style=\"display: flex; align-items: center; gap: 8px; color: #d4d4d8; font-family: 'JetBrains Mono', monospace; font-size: 12px;\">\n    <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg>\n    <span>Indica\u00e7\u00e3o de Vagas</span>\n  </div>\n</div>"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_hero_cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "FALAR COM NOSSO CONSULTOR",
+                "link": {
+                  "url": "#",
+                  "is_external": false,
+                  "nofollow": false,
+                  "custom_attributes": ""
+                },
+                "background_color": "#ff6b00",
+                "button_background_hover_color": "#f59e0b",
+                "button_hover_animation": "grow",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "12",
+                  "bottom": "12",
+                  "left": "12",
+                  "isLinked": true
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "32",
+                  "bottom": "16",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Space Grotesk",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "text_color": "#000000",
+                "button_text_color_hover": "#000000",
+                "boxshadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 6,
+                  "blur": 24,
+                  "spread": 0,
+                  "color": "rgba(255,107,0,0.4)"
+                },
+                "css_classes": "esj-glow-hover",
+                "align": "left",
+                "button_size": "custom"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "c_hero_right",
+          "elType": "column",
+          "settings": {
+            "_column_size": 45,
+            "_inline_size": 45,
+            "content_position": "center",
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "w_hero_image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "{{hero_image_url}}",
+                  "id": "",
+                  "alt": "Soldador trabalhando com fa\u00edscas brilhantes - Escola de Solda no Jap\u00e3o"
+                },
+                "image_size": "full",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#27272a",
+                "css_classes": "esj-img-container esj-img-hover-zoom",
+                "hover_animation": "grow"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s_hero_stats",
+      "elType": "section",
+      "settings": {
+        "content_width": "boxed",
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "20",
+          "bottom": "60",
+          "left": "20",
+          "isLinked": false
+        },
+        "margin": {
+          "unit": "px",
+          "top": "-40",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#0a0a0c",
+        "html_tag": "section"
+      },
+      "elements": [
+        {
+          "id": "c_stats_wrap",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "w_stats_html",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"esj-stats-bar\" style=\"max-width: 1280px; margin: 0 auto;\">\n  <div class=\"esj-stat-item\">\n    <span class=\"esj-stat-value\">\u00a51.600 - \u00a52.500</span>\n    <span class=\"esj-stat-label\">Sal\u00e1rio M\u00e9dio por Hora</span>\n    <span class=\"esj-stat-desc\">Praticamente o dobro de uma f\u00e1brica comum</span>\n  </div>\n  <div class=\"esj-stat-item\">\n    <span class=\"esj-stat-value\">+1.200</span>\n    <span class=\"esj-stat-label\">Alunos Formados</span>\n    <span class=\"esj-stat-desc\">Brazilienses e latinos atuantes no Jap\u00e3o</span>\n  </div>\n  <div class=\"esj-stat-item\">\n    <span class=\"esj-stat-value\">92%</span>\n    <span class=\"esj-stat-label\">Taxa de Empregabilidade</span>\n    <span class=\"esj-stat-desc\">Alunos contratados logo ap\u00f3s formarem</span>\n  </div>\n  <div class=\"esj-stat-item\">\n    <span class=\"esj-stat-value\">100%</span>\n    <span class=\"esj-stat-label\">Aulas em Portugu\u00eas</span>\n    <span class=\"esj-stat-desc\">Explica\u00e7\u00f5es f\u00e1ceis e did\u00e1tica direta</span>\n  </div>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s_comparison",
+      "elType": "section",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#0a0a0c",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        },
+        "html_tag": "section"
+      },
+      "elements": [
+        {
+          "id": "c_comp_header",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "w_comp_badge",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"esj-badge\" style=\"margin: 0 auto 16px; width: fit-content;\">DIFEREN\u00c7A DE REALIDADES</div>"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_comp_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Qual caminho voc\u00ea quer seguir no Jap\u00e3o?",
+                "header_size": "h2",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Space Grotesk",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 44
+                },
+                "typography_font_weight": "700",
+                "title_color": "#ffffff"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_comp_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align: center; max-width: 640px; margin: 0 auto;\">Compare a rotina estressante de uma linha comum de f\u00e1brica com a liberdade e o retorno financeiro de um profissional t\u00e9cnico especializado.<\/p>",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "text_color": "#a1a1aa",
+                "align": "center"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_comp_cards",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display: grid; grid-template-columns: 1fr 1fr; gap: 32px; max-width: 1040px; margin: 48px auto 0;\">\n  \n  <!-- Haken Card (Negative) -->\n  <div class=\"esj-card esj-comparison-negative\">\n    <div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 24px;\">\n      <div style=\"background: rgba(239,68,68,0.1); padding: 10px; border-radius: 12px; color: #ef4444;\">\n        <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>\n      </div>\n      <div>\n        <h3 style=\"font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; color: #d4d4d8; margin: 0;\">F\u00e1brica Comum (Haken Geral)</h3>\n        <p style=\"color: rgba(239,68,68,0.8); font-family: 'JetBrains Mono', monospace; font-size: 12px; margin: 4px 0 0;\">Rotina Estagnada e Pesada</p>\n      </div>\n    </div>\n    <div style=\"display: flex; flex-direction: column; gap: 16px; margin: 24px 0;\">\n      <div style=\"display: flex; gap: 12px;\"><div style=\"background: rgba(239,68,68,0.1); color: #ef4444; border-radius: 50%; padding: 2px; flex-shrink: 0; margin-top: 2px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"/><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"/></svg></div><span style=\"font-size: 14px; color: #a1a1aa; line-height: 1.5;\">Sal\u00e1rio estagnado (\u00a51.050 a \u00a51.250/hora)</span></div>\n      <div style=\"display: flex; gap: 12px;\"><div style=\"background: rgba(239,68,68,0.1); color: #ef4444; border-radius: 50%; padding: 2px; flex-shrink: 0; margin-top: 2px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"/><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"/></svg></div><span style=\"font-size: 14px; color: #a1a1aa; line-height: 1.5;\">Trabalho repetitivo e exaustivo na esteira</span></div>\n      <div style=\"display: flex; gap: 12px;\"><div style=\"background: rgba(239,68,68,0.1); color: #ef4444; border-radius: 50%; padding: 2px; flex-shrink: 0; margin-top: 2px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"/><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"/></svg></div><span style=\"font-size: 14px; color: #a1a1aa; line-height: 1.5;\">Risco constante de demiss\u00e3o repentina (hanten)</span></div>\n      <div style=\"display: flex; gap: 12px;\"><div style=\"background: rgba(239,68,68,0.1); color: #ef4444; border-radius: 50%; padding: 2px; flex-shrink: 0; margin-top: 2px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"/><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"/></svg></div><span style=\"font-size: 14px; color: #a1a1aa; line-height: 1.5;\">Sem perspectiva de crescimento ou plano de carreira</span></div>\n      <div style=\"display: flex; gap: 12px;\"><div style=\"background: rgba(239,68,68,0.1); color: #ef4444; border-radius: 50%; padding: 2px; flex-shrink: 0; margin-top: 2px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"/><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"/></svg></div><span style=\"font-size: 14px; color: #a1a1aa; line-height: 1.5;\">Desvaloriza\u00e7\u00e3o profissional e pouca autonomia</span></div>\n    </div>\n    <div style=\"border-top: 1px solid rgba(39,39,42,0.6); padding-top: 24px; margin-top: 16px;\">\n      <p style=\"color: #71717a; font-size: 12px; font-family: 'JetBrains Mono', monospace; text-align: center;\">Sem tempo para a fam\u00edlia \u2022 Alto esgotamento f\u00edsico e mental</p>\n    </div>\n  </div>\n  \n  <!-- Welder Card (Positive) -->\n  <div class=\"esj-card-premium\">\n    <div style=\"position: absolute; top: 16px; right: 16px; background: #ff6b00; color: #000; font-family: 'JetBrains Mono', monospace; font-weight: 900; font-size: 9px; text-transform: uppercase; padding: 4px 8px; border-radius: 4px;\">MELHOR FUTURO</div>\n    <div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 24px;\">\n      <div style=\"background: rgba(255,107,0,0.1); padding: 10px; border-radius: 12px; color: #ff6b00;\">\n        <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"currentColor\" stroke-width=\"2\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/></svg>\n      </div>\n      <div>\n        <h3 style=\"font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; color: #fff; margin: 0;\">Soldador Profissional Certificado</h3>\n        <p style=\"color: #f59e0b; font-family: 'JetBrains Mono', monospace; font-size: 12px; margin: 4px 0 0;\">Carreira de Elite no Jap\u00e3o</p>\n      </div>\n    </div>\n    <div style=\"display: flex; flex-direction: column; gap: 16px; margin: 24px 0;\">\n      <div style=\"display: flex; gap: 12px;\"><div style=\"background: rgba(255,107,0,0.2); color: #ff6b00; border-radius: 50%; padding: 2px; flex-shrink: 0; margin-top: 2px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"><polyline points=\"20 6 9 17 4 12\"/></svg></div><span style=\"font-size: 14px; color: #fff; font-weight: 500; line-height: 1.5;\">Sal\u00e1rios elevados (\u00a51.600 a \u00a52.500+/hora)</span></div>\n      <div style=\"display: flex; gap: 12px;\"><div style=\"background: rgba(255,107,0,0.2); color: #ff6b00; border-radius: 50%; padding: 2px; flex-shrink: 0; margin-top: 2px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"><polyline points=\"20 6 9 17 4 12\"/></svg></div><span style=\"font-size: 14px; color: #fff; font-weight: 500; line-height: 1.5;\">Trabalho t\u00e9cnico, intelectual e de precis\u00e3o</span></div>\n      <div style=\"display: flex; gap: 12px;\"><div style=\"background: rgba(255,107,0,0.2); color: #ff6b00; border-radius: 50%; padding: 2px; flex-shrink: 0; margin-top: 2px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"><polyline points=\"20 6 9 17 4 12\"/></svg></div><span style=\"font-size: 14px; color: #fff; font-weight: 500; line-height: 1.5;\">Profiss\u00e3o altamente requisitada em todo o Jap\u00e3o</span></div>\n      <div style=\"display: flex; gap: 12px;\"><div style=\"background: rgba(255,107,0,0.2); color: #ff6b00; border-radius: 50%; padding: 2px; flex-shrink: 0; margin-top: 2px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"><polyline points=\"20 6 9 17 4 12\"/></svg></div><span style=\"font-size: 14px; color: #fff; font-weight: 500; line-height: 1.5;\">Carreira s\u00f3lida com aumento salarial cont\u00ednuo</span></div>\n      <div style=\"display: flex; gap: 12px;\"><div style=\"background: rgba(255,107,0,0.2); color: #ff6b00; border-radius: 50%; padding: 2px; flex-shrink: 0; margin-top: 2px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"><polyline points=\"20 6 9 17 4 12\"/></svg></div><span style=\"font-size: 14px; color: #fff; font-weight: 500; line-height: 1.5;\">Respeito profissional e estabilidade contratual</span></div>\n    </div>\n    <div style=\"border-top: 1px solid #27272a; padding-top: 24px; margin-top: 16px;\">\n      <button class=\"esj-btn-primary-full\" onclick=\"document.querySelector('[data-action=\\'open-lead\\']').click(); return false;\">QUERO ESTA EVOLU\u00c7\u00c3O NA MINHA VIDA</button>\n      <p style=\"color: #a1a1aa; font-size: 11px; font-family: 'JetBrains Mono', monospace; text-align: center; margin-top: 12px;\">Vagas dispon\u00edveis em Gunma, Aichi, Shizuoka e mais.</p>\n    </div>\n  </div>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s_calculator",
+      "elType": "section",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#070709",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        },
+        "html_tag": "section"
+      },
+      "elements": [
+        {
+          "id": "c_calc_full",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "w_calc_badge",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"esj-badge\" style=\"margin: 0 auto 16px; width: fit-content;\">SIMULADOR DE RETORNO FINANCEIRO (ROI)</div>"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_calc_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Simule o seu novo sal\u00e1rio no Jap\u00e3o",
+                "header_size": "h2",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Space Grotesk",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 44
+                },
+                "typography_font_weight": "700",
+                "title_color": "#ffffff"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_calc_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align: center; max-width: 600px; margin: 0 auto;\">Ajuste os valores abaixo com a sua realidade de trabalho atual e veja o quanto seu faturamento aumentar\u00e1 como um soldador qualificado.<\/p>",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "text_color": "#a1a1aa",
+                "align": "center"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_calc_html",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div id=\"esj-salary-calculator\" style=\"display: grid; grid-template-columns: 1fr 1fr; gap: 32px; max-width: 1040px; margin: 40px auto 0; align-items: stretch;\">\n  \n  <!-- Controls Panel (Left) -->\n  <div class=\"esj-card-dark\" style=\"padding: 32px; display: flex; flex-direction: column; justify-content: space-between;\">\n    <div>\n      <h3 style=\"font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 18px; color: #fff; margin-bottom: 24px;\">Passo 1: Suas Horas e Sal\u00e1rio Atual</h3>\n\n      <!-- Slider 1: Hourly Rate -->\n      <div style=\"margin-bottom: 24px;\">\n        <div style=\"display: flex; justify-content: space-between; align-items: center; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #d4d4d8; margin-bottom: 12px;\">\n          <span>Seu Valor-Hora Atual:</span>\n          <strong style=\"color: #ff6b00; font-size: 16px;\"><span id=\"esj-current-wage-display\">\u00a51,150/h</span></strong>\n        </div>\n        <input type=\"range\" id=\"esj-current-wage\" min=\"1000\" max=\"1600\" step=\"25\" value=\"1150\" style=\"width: 100%; height: 6px; background: #27272a; border-radius: 8px; appearance: none; cursor: pointer; accent-color: #ff6b00;\">\n        <div style=\"display: flex; justify-content: space-between; font-size: 11px; color: #71717a; font-family: 'JetBrains Mono', monospace; margin-top: 8px;\">\n          <span>\u00a51.000/h (M\u00ednimo comum)</span>\n          <span>\u00a51.600/h</span>\n        </div>\n      </div>\n\n      <!-- Slider 2: Weekly Hours -->\n      <div style=\"margin-bottom: 24px;\">\n        <div style=\"display: flex; justify-content: space-between; align-items: center; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #d4d4d8; margin-bottom: 12px;\">\n          <span>Horas Normais p/ Semana:</span>\n          <strong style=\"color: #ff6b00; font-size: 16px;\"><span id=\"esj-weekly-hours-display\">40 horas</span></strong>\n        </div>\n        <input type=\"range\" id=\"esj-weekly-hours\" min=\"20\" max=\"60\" step=\"1\" value=\"40\" style=\"width: 100%; height: 6px; background: #27272a; border-radius: 8px; appearance: none; cursor: pointer; accent-color: #ff6b00;\">\n        <div style=\"display: flex; justify-content: space-between; font-size: 11px; color: #71717a; font-family: 'JetBrains Mono', monospace; margin-top: 8px;\">\n          <span>20h</span>\n          <span>40h (Padr\u00e3o)</span>\n          <span>60h</span>\n        </div>\n      </div>\n\n      <!-- Slider 3: Overtime Hours -->\n      <div style=\"margin-bottom: 24px;\">\n        <div style=\"display: flex; justify-content: space-between; align-items: center; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #d4d4d8; margin-bottom: 12px;\">\n          <span>Horas Extras p/ M\u00eas:</span>\n          <strong style=\"color: #ff6b00; font-size: 16px;\"><span id=\"esj-overtime-hours-display\">15 horas</span></strong>\n        </div>\n        <input type=\"range\" id=\"esj-overtime-hours\" min=\"0\" max=\"45\" step=\"5\" value=\"15\" style=\"width: 100%; height: 6px; background: #27272a; border-radius: 8px; appearance: none; cursor: pointer; accent-color: #ff6b00;\">\n        <div style=\"display: flex; justify-content: space-between; font-size: 11px; color: #71717a; font-family: 'JetBrains Mono', monospace; margin-top: 8px;\">\n          <span>Sem Extras (0h)</span>\n          <span>45h (M\u00e1ximo legal)</span>\n        </div>\n      </div>\n    </div>\n\n    <div style=\"background: rgba(24,24,27,0.6); border: 1px solid rgba(39,39,42,0.5); padding: 16px; border-radius: 12px; font-size: 12px; color: #a1a1aa; margin-top: 16px; display: flex; gap: 10px;\">\n      <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" style=\"flex-shrink: 0; margin-top: 2px;\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"/><line x1=\"16\" y1=\"2\" x2=\"16\" y2=\"6\"/><line x1=\"8\" y1=\"2\" x2=\"8\" y2=\"6\"/><line x1=\"3\" y1=\"10\" x2=\"21\" y2=\"10\"/></svg>\n      <span><strong>Como calculamos:</strong> Consideramos um m\u00eas padr\u00e3o de 4.33 semanas, horas normais, e acr\u00e9scimo legal de 25% para as horas extras. Comparamos seu ganho com a m\u00e9dia real de <strong>\u00a51.950/h</strong> de um soldador qualificado.</span>\n    </div>\n  </div>\n\n  <!-- Results Panel (Right) -->\n  <div style=\"background: linear-gradient(to bottom right, #18181b, #09090b); border: 1px solid rgba(255,107,0,0.3); border-radius: 16px; padding: 32px; display: flex; flex-direction: column; justify-content: space-between; position: relative; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);\">\n    <div style=\"position: absolute; top: -12px; right: -12px; background: #ff6b00; color: #000; font-family: 'JetBrains Mono', monospace; font-weight: 900; font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; padding: 4px 12px; border-radius: 9999px; box-shadow: 0 4px 12px rgba(255,107,0,0.3);\">SIMULA\u00c7\u00c3O DE ENGENHARIA FINANCEIRA</div>\n    \n    <div>\n      <h3 style=\"font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 18px; color: #fff; margin-bottom: 24px;\">Passo 2: Seu Aumento Salarial Previsto</h3>\n\n      <div style=\"display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px;\">\n        <div style=\"background: rgba(9,9,11,0.5); padding: 16px; border-radius: 12px; border: 1px solid rgba(39,39,42,0.8);\">\n          <p style=\"color: #71717a; font-size: 12px; font-family: 'JetBrains Mono', monospace; margin: 0 0 4px;\">Seu Ganho Mensal Atual</p>\n          <p style=\"font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; color: #a1a1aa; margin: 0;\"><span id=\"esj-current-monthly\">\u00a5220,000</span></p>\n        </div>\n        <div style=\"background: rgba(255,107,0,0.05); padding: 16px; border-radius: 12px; border: 1px solid rgba(255,107,0,0.2);\">\n          <p style=\"color: #f59e0b; font-size: 12px; font-family: 'JetBrains Mono', monospace; margin: 0 0 4px;\">Novo Ganho Mensal Estimado</p>\n          <p style=\"font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; color: #fff; margin: 0;\"><span id=\"esj-welder-monthly\">\u00a5390,000</span></p>\n        </div>\n      </div>\n\n      <div style=\"display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px;\">\n        <div style=\"background: rgba(255,107,0,0.1); border: 1px solid rgba(255,107,0,0.2); padding: 20px; border-radius: 12px; display: flex; align-items: center; justify-content: space-between;\">\n          <div style=\"display: flex; align-items: center; gap: 12px;\">\n            <div style=\"background: #ff6b00; color: #000; border-radius: 8px; padding: 8px; flex-shrink: 0;\">\n              <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polyline points=\"23 6 13.5 15.5 8.5 10.5 1 18\"/><polyline points=\"17 6 23 6 23 12\"/></svg>\n            </div>\n            <div>\n              <p style=\"color: #fff; font-size: 14px; font-weight: 600; margin: 0;\">Seu Aumento Mensal L\u00edquido</p>\n              <p style=\"color: #a1a1aa; font-size: 12px; margin: 2px 0 0;\">Dinheiro a mais todo m\u00eas no seu bolso</p>\n            </div>\n          </div>\n          <strong style=\"font-family: 'Space Grotesk', sans-serif; font-weight: 800; font-size: 24px; color: #ff6b00; text-align: right;\"><span id=\"esj-monthly-increase\">+\u00a5170,000</span></strong>\n        </div>\n\n        <div style=\"background: rgba(9,9,11,0.8); border: 1px solid rgba(39,39,42,0.6); padding: 20px; border-radius: 12px; display: flex; align-items: center; justify-content: space-between;\">\n          <div style=\"display: flex; align-items: center; gap: 12px;\">\n            <div style=\"background: rgba(255,107,0,0.2); color: #ff6b00; border-radius: 8px; padding: 8px; flex-shrink: 0;\">\n              <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z\"/><path d=\"M19 10v2a7 7 0 0 1-14 0v-2\"/><line x1=\"12\" y1=\"19\" x2=\"12\" y2=\"23\"/><line x1=\"8\" y1=\"23\" x2=\"16\" y2=\"23\"/></svg>\n            </div>\n            <div>\n              <p style=\"color: #fff; font-size: 14px; font-weight: 600; margin: 0;\">Seu Ganho Extra p/ Ano</p>\n              <p style=\"color: #a1a1aa; font-size: 12px; margin: 2px 0 0;\">Viagens, poupan\u00e7a e tranquilidade</p>\n            </div>\n          </div>\n          <strong style=\"font-family: 'Space Grotesk', sans-serif; font-weight: 800; font-size: 24px; color: #34d399; text-align: right;\"><span id=\"esj-annual-increase\">+\u00a52,040,000</span></strong>\n        </div>\n      </div>\n\n      <div style=\"background: rgba(24,24,27,0.6); border: 1px solid #27272a; padding: 16px; border-radius: 12px; text-align: center;\">\n        <p style=\"color: #d4d4d8; font-size: 14px; margin: 0;\"><strong>Com essa diferen\u00e7a salarial</strong>, o custo de todo o treinamento pr\u00e1tico e certifica\u00e7\u00e3o se paga em <strong style=\"color: #ff6b00;\">menos de 2 meses</strong> de trabalho como soldador qualificado!</p>\n      </div>\n    </div>\n\n    <button class=\"esj-btn-primary-full\" style=\"margin-top: 24px;\" onclick=\"document.querySelector('[data-action=\\'open-lead\\']').click(); return false;\">QUERO SIMULAR MEU PLANO DE CARREIRA</button>\n  </div>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s_curriculum",
+      "elType": "section",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#0a0a0c",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        },
+        "html_tag": "section"
+      },
+      "elements": [
+        {
+          "id": "c_curr_full",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "w_curr_badge",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"esj-badge\" style=\"margin: 0 auto 16px; width: fit-content;\">CRONOGRAMA COMPLETO E PROGRAMA DE ESTUDOS</div>"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_curr_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Seu cronograma de progresso t\u00e9cnico",
+                "header_size": "h2",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Space Grotesk",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 44
+                },
+                "typography_font_weight": "700",
+                "title_color": "#ffffff"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_curr_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align: center; max-width: 620px; margin: 0 auto;\">Aprenda passo a passo na pr\u00e1tica do absoluto zero ao n\u00edvel de certifica\u00e7\u00e3o japonesa. Explore as abas abaixo para ver o conte\u00fado de cada m\u00f3dulo.<\/p>",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "text_color": "#a1a1aa",
+                "align": "center"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_curr_tabs",
+              "elType": "widget",
+              "widgetType": "tabs",
+              "settings": {
+                "tabs": [
+                  {
+                    "_id": "tab_mod1",
+                    "tab_title": "M\u00f3dulo 1: Seguran\u00e7a, Teoria & Solda Eletrodo (MMA) \u2022 16 Horas",
+                    "tab_content": "<div style=\"font-family: 'Inter', sans-serif; color: #a1a1aa; font-size: 14px; line-height: 1.7;\">\n  <p><strong>Fundamentos essenciais<\/strong> de seguran\u00e7a do trabalho industrial japon\u00eas (Anzen Daiichi), conhecimento de metais e pr\u00e1tica com soldagem de eletrodo revestido.<\/p>\n  <h4 style=\"color: #f59e0b; font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; margin-top: 24px;\">Aulas Pr\u00e1ticas:<\/h4>\n  <ul style=\"list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px;\">\n    <li style=\"display: flex; align-items: center; gap: 8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg> Normas r\u00edgidas de seguran\u00e7a industrial<\/li>\n    <li style=\"display: flex; align-items: center; gap: 8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg> Configura\u00e7\u00e3o de fontes de solda<\/li>\n    <li style=\"display: flex; align-items: center; gap: 8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg> T\u00e9cnicas de igni\u00e7\u00e3o do arco el\u00e9trico<\/li>\n    <li style=\"display: flex; align-items: center; gap: 8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg> Soldagem de chapas de a\u00e7o carbono<\/li>\n  <\/ul>\n  <div style=\"display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; border-top: 1px solid #27272a; padding-top: 20px;\">\n    <span style=\"background: #18181b; border: 1px solid #27272a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; color: #d4d4d8;\">\u2705 Seguran\u00e7a Industrial Japonesa<\/span>\n    <span style=\"background: #18181b; border: 1px solid #27272a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; color: #d4d4d8;\">\u2705 Preparo de Metais<\/span>\n    <span style=\"background: #18181b; border: 1px solid #27272a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; color: #d4d4d8;\">\u2705 Uso de EPIs<\/span>\n    <span style=\"background: #18181b; border: 1px solid #27272a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; color: #d4d4d8;\">\u2705 Fundamentos de Solda a Arco<\/span>\n  <\/div>\n<\/div>"
+                  },
+                  {
+                    "_id": "tab_mod2",
+                    "tab_title": "M\u00f3dulo 2: Soldagem Semi-Autom\u00e1tica (MIG/MAG - CO2) \u2022 32 Horas",
+                    "tab_content": "<div style=\"font-family: 'Inter', sans-serif; color: #a1a1aa; font-size: 14px; line-height: 1.7;\">\n  <p><strong>Domine a soldagem por arame s\u00f3lido e tubular<\/strong> com prote\u00e7\u00e3o gasosa. \u00c9 o processo mais exigido no Jap\u00e3o para fabrica\u00e7\u00e3o de autope\u00e7as, chassis e maquin\u00e1rios.<\/p>\n  <h4 style=\"color: #f59e0b; font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; margin-top: 24px;\">Aulas Pr\u00e1ticas:<\/h4>\n  <ul style=\"list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px;\">\n    <li style=\"display: flex; align-items: center; gap: 8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg> Gases de prote\u00e7\u00e3o (CO2, Arg\u00f4nio)<\/li>\n    <li style=\"display: flex; align-items: center; gap: 8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg> Transfer\u00eancia por spray-arc<\/li>\n    <li style=\"display: flex; align-items: center; gap: 8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg> Soldagem em m\u00faltiplas posi\u00e7\u00f5es<\/li>\n    <li style=\"display: flex; align-items: center; gap: 8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg> Controle de alimenta\u00e7\u00e3o do arame<\/li>\n  <\/ul>\n  <div style=\"display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; border-top: 1px solid #27272a; padding-top: 20px;\">\n    <span style=\"background: #18181b; border: 1px solid #27272a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; color: #d4d4d8;\">\u2705 Soldagem MIG/MAG CO2<\/span>\n    <span style=\"background: #18181b; border: 1px solid #27272a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; color: #d4d4d8;\">\u2705 Ajuste de Fluxo de G\u00e1s<\/span>\n    <span style=\"background: #18181b; border: 1px solid #27272a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; color: #d4d4d8;\">\u2705 Soldagem de Autope\u00e7as<\/span>\n    <span style=\"background: #18181b; border: 1px solid #27272a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; color: #d4d4d8;\">\u2705 Preven\u00e7\u00e3o de Trincas<\/span>\n  <\/div>\n<\/div>"
+                  },
+                  {
+                    "_id": "tab_mod3",
+                    "tab_title": "M\u00f3dulo 3: Soldagem de Precis\u00e3o Premium (TIG / Inox / Alum\u00ednio) \u2022 40 Horas",
+                    "tab_content": "<div style=\"font-family: 'Inter', sans-serif; color: #a1a1aa; font-size: 14px; line-height: 1.7;\">\n  <p><strong>Domine a solda mais nobre e bem remunerada<\/strong> do mercado industrial. Foco total em pe\u00e7as finas, tubula\u00e7\u00f5es, a\u00e7o inoxid\u00e1vel e ligas de alum\u00ednio de alta tecnologia.<\/p>\n  <h4 style=\"color: #f59e0b; font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; margin-top: 24px;\">Aulas Pr\u00e1ticas:<\/h4>\n  <ul style=\"list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px;\">\n    <li style=\"display: flex; align-items: center; gap: 8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg> Afia\u00e7\u00e3o correta do Tungst\u00eanio<\/li>\n    <li style=\"display: flex; align-items: center; gap: 8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg> T\u00e9cnica de adi\u00e7\u00e3o de metal de aporte<\/li>\n    <li style=\"display: flex; align-items: center; gap: 8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg> Chapas finas de inox sem deforma\u00e7\u00e3o<\/li>\n    <li style=\"display: flex; align-items: center; gap: 8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg> Soldagem sanit\u00e1ria e purga de g\u00e1s<\/li>\n  <\/ul>\n  <div style=\"display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; border-top: 1px solid #27272a; padding-top: 20px;\">\n    <span style=\"background: #18181b; border: 1px solid #27272a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; color: #d4d4d8;\">\u2705 Solda TIG de Alta Precis\u00e3o<\/span>\n    <span style=\"background: #18181b; border: 1px solid #27272a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; color: #d4d4d8;\">\u2705 A\u00e7o Inoxid\u00e1vel<\/span>\n    <span style=\"background: #18181b; border: 1px solid #27272a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; color: #d4d4d8;\">\u2705 Soldagem de Alum\u00ednio<\/span>\n    <span style=\"background: #18181b; border: 1px solid #27272a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; color: #d4d4d8;\">\u2705 Acabamento Est\u00e9tico Industrial<\/span>\n  <\/div>\n<\/div>"
+                  },
+                  {
+                    "_id": "tab_mod4",
+                    "tab_title": "M\u00f3dulo 4: Certifica\u00e7\u00e3o Japonesa JWES & Empregabilidade \u2022 12 Horas",
+                    "tab_content": "<div style=\"font-family: 'Inter', sans-serif; color: #a1a1aa; font-size: 14px; line-height: 1.7;\">\n  <p><strong>Prepara\u00e7\u00e3o definitiva<\/strong> para passar na prova pr\u00e1tica de licen\u00e7a oficial japonesa e estrat\u00e9gias de inser\u00e7\u00e3o imediata no mercado de trabalho de elite.<\/p>\n  <h4 style=\"color: #f59e0b; font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; margin-top: 24px;\">Aulas Pr\u00e1ticas:<\/h4>\n  <ul style=\"list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px;\">\n    <li style=\"display: flex; align-items: center; gap: 8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg> Simulados id\u00eanticos ao teste JWES<\/li>\n    <li style=\"display: flex; align-items: center; gap: 8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg> Vocabul\u00e1rio t\u00e9cnico em japon\u00eas<\/li>\n    <li style=\"display: flex; align-items: center; gap: 8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg> Curriculo Rirekisho profissional<\/li>\n    <li style=\"display: flex; align-items: center; gap: 8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg> Simula\u00e7\u00e3o de teste t\u00e9cnico em entrevistas<\/li>\n  <\/ul>\n  <div style=\"display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; border-top: 1px solid #27272a; padding-top: 20px;\">\n    <span style=\"background: #18181b; border: 1px solid #27272a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; color: #d4d4d8;\">\u2705 Aprova\u00e7\u00e3o JWES<\/span>\n    <span style=\"background: #18181b; border: 1px solid #27272a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; color: #d4d4d8;\">\u2705 Linguagem T\u00e9cnica Japonesa<\/span>\n    <span style=\"background: #18181b; border: 1px solid #27272a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; color: #d4d4d8;\">\u2705 Curriculo Rirekisho<\/span>\n    <span style=\"background: #18181b; border: 1px solid #27272a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; color: #d4d4d8;\">\u2705 Teste T\u00e9cnico<\/span>\n  <\/div>\n<\/div>"
+                  }
+                ],
+                "typography_typography": "custom",
+                "typography_font_family": "Space Grotesk",
+                "title_color": "#ffffff",
+                "border_color": "#ff6b00",
+                "border_width": {
+                  "unit": "px",
+                  "size": 1
+                },
+                "background_color": "rgba(24,24,27,0.9)",
+                "css_classes": "esj-tabs"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s_gallery",
+      "elType": "section",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#070709",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        },
+        "html_tag": "section"
+      },
+      "elements": [
+        {
+          "id": "c_gallery_full",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "w_gallery_badge",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"esj-badge\" style=\"margin: 0 auto 16px; width: fit-content;\">GALERIA DE T\u00c9CNICAS E EQUIPAMENTOS</div>"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_gallery_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Nossas Especialidades e Processos",
+                "header_size": "h2",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Space Grotesk",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 44
+                },
+                "typography_font_weight": "700",
+                "title_color": "#ffffff"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_gallery_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align: center;\">Explore de forma visual as t\u00e9cnicas industriais de alta performance que voc\u00ea dominar\u00e1 em nossas cabines de treino pr\u00e1tico.<\/p>",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "text_color": "#a1a1aa",
+                "align": "center"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_gallery_grid",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display: grid; grid-template-columns: 1fr 1fr; gap: 32px; max-width: 1040px; margin: 40px auto 0;\">\n  \n  <!-- Card 1 -->\n  <div class=\"esj-card esj-img-hover-zoom\" style=\"padding: 0; overflow: hidden;\">\n    <div style=\"aspect-ratio: 16/10; overflow: hidden; position: relative;\">\n      <img src=\"{{gallery_welding_url}}\" alt=\"Soldagem Industrial Avan\u00e7ada - TIG MIG MAG\" style=\"width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease;\" onmouseover=\"this.style.transform='scale(1.05)'\" onmouseout=\"this.style.transform='scale(1)'\" />\n      <div style=\"position: absolute; inset: 0; background: linear-gradient(to top, #09090b, transparent, transparent); pointer-events: none;\"></div>\n      <div class=\"esj-badge-primary-solid\" style=\"position: absolute; top: 16px; left: 16px;\">PROCESSO PRINCIPAL</div>\n    </div>\n    <div style=\"padding: 24px 32px 32px;\">\n      <h3 style=\"font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 700; color: #fff; margin: 0 0 8px;\">Soldagem Industrial Avan\u00e7ada</h3>\n      <p style=\"font-size: 14px; color: #a1a1aa; line-height: 1.6; margin-bottom: 24px;\">Treinamento completo nos processos TIG, MIG/MAG e Eletrodo Revestido para atuar nas ind\u00fastrias mais exigentes do Jap\u00e3o.<\/p>\n      <div style=\"display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #71717a;\">\n        <span>\u2705 Treino Individual</span>\n        <span>\u2705 Equipamento de Ponta</span>\n        <span>\u2705 Ajuste de Par\u00e2metros</span>\n        <span>\u2705 Norma de Seguran\u00e7a Japonesa</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Card 2 -->\n  <div class=\"esj-card esj-img-hover-zoom\" style=\"padding: 0; overflow: hidden;\">\n    <div style=\"aspect-ratio: 16/10; overflow: hidden; position: relative;\">\n      <img src=\"{{gallery_gouging_url}}\" alt=\"Goivagem Carbon Arc Gouging - Especializa\u00e7\u00e3o\" style=\"width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease;\" onmouseover=\"this.style.transform='scale(1.05)'\" onmouseout=\"this.style.transform='scale(1)'\" />\n      <div style=\"position: absolute; inset: 0; background: linear-gradient(to top, #09090b, transparent, transparent); pointer-events: none;\"></div>\n      <div class=\"esj-badge-primary-solid\" style=\"position: absolute; top: 16px; left: 16px;\">ESPECIALIZA\u00c7\u00c3O ALTA RENDA</div>\n    </div>\n    <div style=\"padding: 24px 32px 32px;\">\n      <h3 style=\"font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 700; color: #fff; margin: 0 0 8px;\">Goivagem (Carbon Arc Gouging)</h3>\n      <p style=\"font-size: 14px; color: #a1a1aa; line-height: 1.6; margin-bottom: 24px;\">Aprenda a t\u00e9cnica de remo\u00e7\u00e3o r\u00e1pida de soldas com defeito, corte t\u00e9rmico e prepara\u00e7\u00e3o de juntas pesadas (Gouging).<\/p>\n      <div style=\"display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #71717a;\">\n        <span>\u2705 Treino Individual</span>\n        <span>\u2705 Equipamento de Ponta</span>\n        <span>\u2705 Ajuste de Par\u00e2metros</span>\n        <span>\u2705 Norma de Seguran\u00e7a Japonesa</span>\n      </div>\n    </div>\n  </div>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s_instructor",
+      "elType": "section",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#070709",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        },
+        "html_tag": "section"
+      },
+      "elements": [
+        {
+          "id": "c_inst_full",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "w_inst_badge",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"esj-badge\" style=\"margin: 0 auto 16px; width: fit-content;\">APRENDA COM QUEM REALMENTE CONHECE O CH\u00c3O DE F\u00c1BRICA</div>"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_inst_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Conhe\u00e7a o seu instrutor t\u00e9cnico",
+                "header_size": "h2",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Space Grotesk",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 44
+                },
+                "typography_font_weight": "700",
+                "title_color": "#ffffff"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_inst_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align: center;\">A Escola de Solda no Jap\u00e3o foi desenhada por quem sentiu na pele as dificuldades do trabalhador estrangeiro e conquistou o topo na metalurgia japonesa.<\/p>",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "text_color": "#a1a1aa",
+                "align": "center"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_inst_layout",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display: grid; grid-template-columns: 5fr 7fr; gap: 48px; max-width: 1200px; margin: 48px auto 0; align-items: center;\">\n  \n  <!-- Photo Column -->\n  <div style=\"position: relative; max-width: 400px; margin: 0 auto;\">\n    <div style=\"position: absolute; inset: 0; background: rgba(255,107,0,0.2); border-radius: 24px; filter: blur(20px); z-index: -1; transform: translate(8px, 8px);\"></div>\n    <div class=\"esj-img-container\" style=\"aspect-ratio: 1;\">\n      <img src=\"{{instructor_url}}\" alt=\"Prof. William Mendes - Instrutor Principal Escola de Solda\" style=\"width: 100%; height: 100%; object-fit: cover;\" />\n      <!-- Years Badge -->\n      <div style=\"position: absolute; top: 16px; left: 16px; background: rgba(10,10,12,0.9); border: 1px solid rgba(39,39,42,0.8); backdrop-filter: blur(12px); padding: 10px 16px; border-radius: 12px; display: flex; align-items: center; gap: 8px;\">\n        <span style=\"font-family: 'Space Grotesk', sans-serif; font-weight: 900; font-size: 24px; color: #ff6b00; line-height: 1;\">18</span>\n        <div style=\"display: flex; flex-direction: column;\">\n          <span style=\"font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #a1a1aa; text-transform: uppercase; letter-spacing: 0.05em; line-height: 1;\">Anos de</span>\n          <span style=\"font-family: 'Inter', sans-serif; font-weight: 700; font-size: 10px; color: #fff; line-height: 1; margin-top: 2px;\">Pr\u00e1tica no Jap\u00e3o</span>\n        </div>\n      </div>\n    </div>\n    <!-- Trust Tag -->\n    <div style=\"position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); width: 90%; background: #09090b; border: 1px solid #27272a; padding: 12px; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.5);\">\n      <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"2\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>\n      <span style=\"font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #d4d4d8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;\">Certificado Master JWES</span>\n    </div>\n  </div>\n\n  <!-- Bio Column -->\n  <div>\n    <p style=\"font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #ff6b00; letter-spacing: 0.1em; text-transform: uppercase;\">Fundador &amp; Instrutor Principal</p>\n    <h3 style=\"font-family: 'Space Grotesk', sans-serif; font-weight: 900; font-size: 32px; color: #fff; margin: 8px 0 20px;\">Prof. William Mendes</h3>\n    \n    <p style=\"color: #d4d4d8; font-size: 15px; line-height: 1.7; margin-bottom: 24px;\">Nascido no Brasil, William migrou para o Jap\u00e3o em 2008 como tantos outros dekasseguis. Enfrentou anos trabalhando 12 horas di\u00e1rias em linhas exaustivas de montagem de autope\u00e7as por baixos sal\u00e1rios. Determinado a mudar seu destino, investiu seu tempo e recursos no aprendizado t\u00e9cnico da soldagem industrial. Ap\u00f3s conquistar as maiores licen\u00e7as estatais do Jap\u00e3o e trabalhar como soldador s\u00eanior em estaleiros e f\u00e1bricas de alta confiabilidade, decidiu fundar a Escola de Solda no Jap\u00e3o. Sua paix\u00e3o \u00e9 capacitar brasileiros para que conquistem independ\u00eancia financeira, estabilidade profissional e saiam de forma definitiva da rotina ma\u00e7ante das f\u00e1bricas comuns.<\/p>\n\n    <!-- Certifications -->\n    <div style=\"border-left: 2px solid rgba(255,107,0,0.3); padding-left: 16px; margin-bottom: 24px; display: flex; flex-direction: column; gap: 10px;\">\n      <div style=\"display: flex; gap: 8px;\">\n        <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\" style=\"flex-shrink: 0; margin-top: 2px;\"><circle cx=\"12\" cy=\"8\" r=\"7\"/><polyline points=\"8.21 13.89 7 23 12 20 17 23 15.79 13.88\"/></svg>\n        <span style=\"font-size: 13px; color: #d4d4d8;\">Certifica\u00e7\u00e3o JWES Grau Especial (Japan Welding Engineering Society)<\/span>\n      </div>\n      <div style=\"display: flex; gap: 8px;\">\n        <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\" style=\"flex-shrink: 0; margin-top: 2px;\"><circle cx=\"12\" cy=\"8\" r=\"7\"/><polyline points=\"8.21 13.89 7 23 12 20 17 23 15.79 13.88\"/></svg>\n        <span style=\"font-size: 13px; color: #d4d4d8;\">Ex-Supervisor Chefe de Soldagem e Controle de Qualidade na Mitsubishi Heavy Industries<\/span>\n      </div>\n      <div style=\"display: flex; gap: 8px;\">\n        <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\" style=\"flex-shrink: 0; margin-top: 2px;\"><circle cx=\"12\" cy=\"8\" r=\"7\"/><polyline points=\"8.21 13.89 7 23 12 20 17 23 15.79 13.88\"/></svg>\n        <span style=\"font-size: 13px; color: #d4d4d8;\">Mais de 1.200 soldadores treinados, certificados e empregados no Jap\u00e3o<\/span>\n      </div>\n      <div style=\"display: flex; gap: 8px;\">\n        <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ff6b00\" stroke-width=\"2\" style=\"flex-shrink: 0; margin-top: 2px;\"><circle cx=\"12\" cy=\"8\" r=\"7\"/><polyline points=\"8.21 13.89 7 23 12 20 17 23 15.79 13.88\"/></svg>\n        <span style=\"font-size: 13px; color: #d4d4d8;\">Especialista Convidado em M\u00e9todos de Soldagem TIG de Alta Precis\u00e3o<\/span>\n      </div>\n    </div>\n\n    <!-- Trajectory Timeline -->\n    <div class=\"esj-card\" style=\"padding: 20px;\">\n      <p style=\"font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #71717a; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px;\">TRAJET\u00d3RIA VITORIOSA<\/p>\n      <div style=\"display: flex; gap: 8px; margin-bottom: 16px; border-bottom: 1px solid rgba(39,39,42,0.6); padding-bottom: 12px; flex-wrap: wrap;\">\n        <div style=\"background: #ff6b00; color: #000; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; font-weight: 700;\">2008<\/div>\n        <div style=\"background: #18181b; color: #71717a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; font-weight: 700;\">2011<\/div>\n        <div style=\"background: #18181b; color: #71717a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; font-weight: 700;\">2015<\/div>\n        <div style=\"background: #18181b; color: #71717a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; font-weight: 700;\">2019<\/div>\n        <div style=\"background: #18181b; color: #71717a; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-family: 'JetBrains Mono', monospace; font-weight: 700;\">2021<\/div>\n      </div>\n      <div>\n        <h4 style=\"font-family: 'Inter', sans-serif; font-weight: 700; font-size: 15px; color: #fff; margin: 0 0 4px;\">Chegada ao Jap\u00e3o como Dekassegui<\/h4>\n        <p style=\"font-size: 13px; color: #a1a1aa; line-height: 1.6; margin: 0;\">In\u00edcio da jornada trabalhando pesado em metal\u00fargica geral, operando prensas mec\u00e2nicas sob alto cansa\u00e7o f\u00edsico.<\/p>\n      </div>\n    </div>\n  </div>\n<\/div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s_testimonials",
+      "elType": "section",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#0a0a0c",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        },
+        "html_tag": "section"
+      },
+      "elements": [
+        {
+          "id": "c_test_full",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "w_test_badge",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"esj-badge\" style=\"margin: 0 auto 16px; width: fit-content;\">TRANSFORMA\u00c7\u00d5ES REAIS</div>"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_test_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Hist\u00f3rias de quem mudou de vida de verdade",
+                "header_size": "h2",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Space Grotesk",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 44
+                },
+                "typography_font_weight": "700",
+                "title_color": "#ffffff"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_test_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align: center;\">Centenas de alunos j\u00e1 passaram por nossas cabines e hoje colhem os frutos de terem aprendido uma profiss\u00e3o altamente valorizada e de alta renda.<\/p>",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "text_color": "#a1a1aa",
+                "align": "center"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_test_cards",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display: grid; grid-template-columns: 1fr 1fr; gap: 32px; max-width: 1040px; margin: 40px auto 0;\">\n  \n  <!-- Thiago -->\n  <div class=\"esj-card esj-testimonial-card\" style=\"display: flex; flex-direction: column; justify-content: space-between;\">\n    <div style=\"position: absolute; top: 16px; right: 24px; font-size: 48px; color: rgba(24,24,27,0.4); font-family: Georgia, serif; pointer-events: none; user-select: none; line-height: 1;\">\u201c<\/div>\n    <div>\n      <div style=\"display: flex; gap: 4px; margin-bottom: 20px;\">\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n      <\/div>\n      <p style=\"font-size: 14px; color: #d4d4d8; line-height: 1.7; font-style: italic; margin-bottom: 24px;\">&ldquo;Trabalhava 12h por dia na prensa, exausto e sem perspectiva alguma de melhorar. O curso da Escola de Solda no Jap\u00e3o mudou a minha vida completamente. Aprendi solda TIG do absoluto zero. O suporte em portugu\u00eas foi essencial... Hoje ganho quase o dobro, tenho finais de semana livres e sou respeitado na f\u00e1brica. Valeu cada iene investido!&rdquo;<\/p>\n    <\/div>\n    <div style=\"border-top: 1px solid #18181b; padding-top: 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;\">\n      <div style=\"display: flex; align-items: center; gap: 12px;\">\n        <div style=\"width: 40px; height: 40px; background: rgba(255,107,0,0.1); border: 1px solid rgba(255,107,0,0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ff6b00; font-family: 'Space Grotesk', sans-serif; font-weight: 900; font-size: 14px; text-transform: uppercase;\">TO<\/div>\n        <div>\n          <span style=\"font-weight: 700; font-size: 14px; color: #fff;\">Thiago Oliveira<\/span>\n          <span style=\"font-size: 11px; color: #71717a; display: block;\">\u00f0\u0178\u201c\u008d Ota, Gunma<\/span>\n        </div>\n      </div>\n      <div style=\"text-align: right;\">\n        <span style=\"color: #f87171; font-size: 10px; font-family: 'JetBrains Mono', monospace; text-decoration: line-through; display: block;\">Operador de Prensa (\u00a51.150/h)<\/span>\n        <span style=\"color: #34d399; font-size: 10px; font-family: 'JetBrains Mono', monospace; font-weight: 700; display: block;\">Soldador TIG de Precis\u00e3o (\u00a51.980/h)<\/span>\n      </div>\n    <\/div>\n  <\/div>\n\n  <!-- Marcos -->\n  <div class=\"esj-card esj-testimonial-card\" style=\"display: flex; flex-direction: column; justify-content: space-between;\">\n    <div style=\"position: absolute; top: 16px; right: 24px; font-size: 48px; color: rgba(24,24,27,0.4); font-family: Georgia, serif; pointer-events: none; user-select: none; line-height: 1;\">\u201c<\/div>\n    <div>\n      <div style=\"display: flex; gap: 4px; margin-bottom: 20px;\">\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n      <\/div>\n      <p style=\"font-size: 14px; color: #d4d4d8; line-height: 1.7; font-style: italic; margin-bottom: 24px;\">&ldquo;Super recomendo o curso do Professor William! Ele ensina com muita paci\u00eancia e did\u00e1tica impec\u00e1vel. As cabines de treino s\u00e3o individuais e id\u00eanticas \u00e0s das grandes ind\u00fastrias... Consegui tirar a licen\u00e7a oficial da JWES nas primeiras semanas ap\u00f3s o curso e fui contratado por indica\u00e7\u00e3o direta da escola.&rdquo;<\/p>\n    <\/div>\n    <div style=\"border-top: 1px solid #18181b; padding-top: 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;\">\n      <div style=\"display: flex; align-items: center; gap: 12px;\">\n        <div style=\"width: 40px; height: 40px; background: rgba(255,107,0,0.1); border: 1px solid rgba(255,107,0,0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ff6b00; font-family: 'Space Grotesk', sans-serif; font-weight: 900; font-size: 14px; text-transform: uppercase;\">MT<\/div>\n        <div>\n          <span style=\"font-weight: 700; font-size: 14px; color: #fff;\">Marcos Tanaka<\/span>\n          <span style=\"font-size: 11px; color: #71717a; display: block;\">\u00f0\u0178\u201c\u008d Toyohashi, Aichi<\/span>\n        </div>\n      </div>\n      <div style=\"text-align: right;\">\n        <span style=\"color: #f87171; font-size: 10px; font-family: 'JetBrains Mono', monospace; text-decoration: line-through; display: block;\">Separador de Pe\u00e7as (\u00a51.200/h)<\/span>\n        <span style=\"color: #34d399; font-size: 10px; font-family: 'JetBrains Mono', monospace; font-weight: 700; display: block;\">Soldador MIG/MAG Industrial (\u00a51.850/h)<\/span>\n      </div>\n    <\/div>\n  <\/div>\n\n  <!-- Priscila -->\n  <div class=\"esj-card esj-testimonial-card\" style=\"display: flex; flex-direction: column; justify-content: space-between;\">\n    <div style=\"position: absolute; top: 16px; right: 24px; font-size: 48px; color: rgba(24,24,27,0.4); font-family: Georgia, serif; pointer-events: none; user-select: none; line-height: 1;\">\u201c<\/div>\n    <div>\n      <div style=\"display: flex; gap: 4px; margin-bottom: 20px;\">\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n      <\/div>\n      <p style=\"font-size: 14px; color: #d4d4d8; line-height: 1.7; font-style: italic; margin-bottom: 24px;\">&ldquo;Sempre achei que soldagem era uma profiss\u00e3o estritamente masculina, mas a Escola de Solda me acolheu de forma fant\u00e1stica. O Professor William me ensinou a t\u00e9cnica fina de precis\u00e3o na soldagem TIG de a\u00e7o inox. Hoje trabalho em uma f\u00e1brica limpa, soldando pe\u00e7as de alta tecnologia. Conquistei minha independ\u00eancia financeira aqui no Jap\u00e3o!&rdquo;<\/p>\n    <\/div>\n    <div style=\"border-top: 1px solid #18181b; padding-top: 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;\">\n      <div style=\"display: flex; align-items: center; gap: 12px;\">\n        <div style=\"width: 40px; height: 40px; background: rgba(255,107,0,0.1); border: 1px solid rgba(255,107,0,0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ff6b00; font-family: 'Space Grotesk', sans-serif; font-weight: 900; font-size: 14px; text-transform: uppercase;\">PS<\/div>\n        <div>\n          <span style=\"font-weight: 700; font-size: 14px; color: #fff;\">Priscila Souza<\/span>\n          <span style=\"font-size: 11px; color: #71717a; display: block;\">\u00f0\u0178\u201c\u008d Hamamatsu, Shizuoka<\/span>\n        </div>\n      </div>\n      <div style=\"text-align: right;\">\n        <span style=\"color: #f87171; font-size: 10px; font-family: 'JetBrains Mono', monospace; text-decoration: line-through; display: block;\">Embaladora de Bento (\u00a51.050/h)<\/span>\n        <span style=\"color: #34d399; font-size: 10px; font-family: 'JetBrains Mono', monospace; font-weight: 700; display: block;\">Soldadora TIG em Inox (\u00a51.750/h)<\/span>\n      </div>\n    <\/div>\n  <\/div>\n\n  <!-- Rafael -->\n  <div class=\"esj-card esj-testimonial-card\" style=\"display: flex; flex-direction: column; justify-content: space-between;\">\n    <div style=\"position: absolute; top: 16px; right: 24px; font-size: 48px; color: rgba(24,24,27,0.4); font-family: Georgia, serif; pointer-events: none; user-select: none; line-height: 1;\">\u201c<\/div>\n    <div>\n      <div style=\"display: flex; gap: 4px; margin-bottom: 20px;\">\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#ff6b00\" stroke=\"#ff6b00\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"/><\/svg>\n      <\/div>\n      <p style=\"font-size: 14px; color: #d4d4d8; line-height: 1.7; font-style: italic; margin-bottom: 24px;\">&ldquo;O cronograma flex\u00edvel de finais de semana foi perfeito. Consegui estudar sem precisar pedir as contas do meu servi\u00e7o antigo. O investimento no curso se pagou em menos de 3 meses de trabalho como soldador profissional. Hoje n\u00e3o dependo mais de ag\u00eancia exploradora, tenho contrato direto (Keiyaku-shain) e estabilidade financeira.&rdquo;<\/p>\n    <\/div>\n    <div style=\"border-top: 1px solid #18181b; padding-top: 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;\">\n      <div style=\"display: flex; align-items: center; gap: 12px;\">\n        <div style=\"width: 40px; height: 40px; background: rgba(255,107,0,0.1); border: 1px solid rgba(255,107,0,0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ff6b00; font-family: 'Space Grotesk', sans-serif; font-weight: 900; font-size: 14px; text-transform: uppercase;\">RS<\/div>\n        <div>\n          <span style=\"font-weight: 700; font-size: 14px; color: #fff;\">Rafael Santos<\/span>\n          <span style=\"font-size: 11px; color: #71717a; display: block;\">\u00f0\u0178\u201c\u008d Yokkaichi, Mie<\/span>\n        </div>\n      </div>\n      <div style=\"text-align: right;\">\n        <span style=\"color: #f87171; font-size: 10px; font-family: 'JetBrains Mono', monospace; text-decoration: line-through; display: block;\">Operador de Moldagem (\u00a51.250/h)<\/span>\n        <span style=\"color: #34d399; font-size: 10px; font-family: 'JetBrains Mono', monospace; font-weight: 700; display: block;\">Soldador Especialista (\u00a52.200/h)<\/span>\n      </div>\n    <\/div>\n  <\/div>\n<\/div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s_faq",
+      "elType": "section",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#070709",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        },
+        "html_tag": "section"
+      },
+      "elements": [
+        {
+          "id": "c_faq_full",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "w_faq_badge",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"esj-badge\" style=\"margin: 0 auto 16px; width: fit-content;\">D\u00daVIDAS FREQUENTES (FAQ)</div>"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_faq_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tire todas as suas d\u00favidas sobre o curso",
+                "header_size": "h2",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Space Grotesk",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 40
+                },
+                "typography_font_weight": "700",
+                "title_color": "#ffffff"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_faq_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align: center;\">Encontre respostas r\u00e1pidas sobre a metodologia, vagas de trabalho, idiomas e formas de pagamento da nossa escola.<\/p>",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "text_color": "#a1a1aa",
+                "align": "center"
+              },
+              "elements": []
+            },
+            {
+              "id": "w_faq_accordion",
+              "elType": "widget",
+              "widgetType": "accordion",
+              "settings": {
+                "tabs": [
+                  {
+                    "_id": "faq_1",
+                    "tab_title": "N\u00e3o falo japon\u00eas fluente. Consigo fazer o curso e trabalhar?",
+                    "tab_content": "<p>Sim, totalmente! Nosso m\u00e9todo foi desenvolvido exclusivamente para brasileiros. Toda a nossa teoria e pr\u00e1tica de ensino s\u00e3o ministradas 100% em portugu\u00eas. Al\u00e9m do aprendizado da soldagem, n\u00f3s ensinamos os principais termos e comandos em japon\u00eas t\u00e9cnico industrial (como \"Anzen Daiichi\", \"Yousetsu\", etc.) que voc\u00ea ouvir\u00e1 nas f\u00e1bricas. Isso garante que voc\u00ea execute o servi\u00e7o com seguran\u00e7a e passe em testes de emprego mesmo com japon\u00eas b\u00e1sico.<\/p>"
+                  },
+                  {
+                    "_id": "faq_2",
+                    "tab_title": "Como funcionam os hor\u00e1rios das aulas? Consigo continuar no meu emprego?",
+                    "tab_content": "<p>Com certeza. Nosso curso foi planejado para quem trabalha de segunda a sexta em per\u00edodo integral. Oferecemos turmas flex\u00edveis aos s\u00e1bados ou aos domingos. Assim, voc\u00ea faz sua transi\u00e7\u00e3o de carreira de forma segura, mantendo sua fonte de renda atual enquanto se qualifica.<\/p>"
+                  },
+                  {
+                    "_id": "faq_3",
+                    "tab_title": "A escola oferece infraestrutura individual para os alunos treinar?",
+                    "tab_content": "<p>Sim, este \u00e9 um dos nossos maiores orgulhos. Na nossa escola, voc\u00ea n\u00e3o divide m\u00e1quina ou cabine. Cada aluno possui sua pr\u00f3pria cabine de solda industrial privativa, equipada com tochas TIG, tochas MIG/MAG de \u00faltima gera\u00e7\u00e3o, m\u00e1scara eletr\u00f4nica autom\u00e1tica, lixadeiras e todos os metais necess\u00e1rios para o treino pr\u00e1tico cont\u00ednuo. \u00c9 90% pr\u00e1tica de m\u00e3o na massa.<\/p>"
+                  },
+                  {
+                    "_id": "faq_4",
+                    "tab_title": "Como funciona a indica\u00e7\u00e3o de vagas e o suporte de emprego?",
+                    "tab_content": "<p>N\u00f3s temos uma rede s\u00f3lida de contatos com empreiteiras (haken) e f\u00e1bricas metal\u00fargicas em prov\u00edncias de forte presen\u00e7a industrial, como Gunma, Aichi, Shizuoka, Mie, Ibaraki e Saitama. Indicamos os alunos formados para processos seletivos e preparamos voc\u00ea para o teste pr\u00e1tico exigido nas entrevistas, o que eleva muito as taxas de contrata\u00e7\u00e3o.<\/p>"
+                  },
+                  {
+                    "_id": "faq_5",
+                    "tab_title": "Nunca soldei nada na vida. Esse curso \u00e9 para mim?",
+                    "tab_content": "<p>Sim! Mais de 80% dos nossos alunos de sucesso come\u00e7aram exatamente do absoluto zero, muitos deles vindo de servi\u00e7os de log\u00edstica, limpeza ou empacotamento de bento. Nossa metodologia \u00e9 de evolu\u00e7\u00e3o cont\u00ednua e individualizada. O Professor William acompanha seu progresso lado a lado, ajustando sua pegada, velocidade da m\u00e3o e leitura de po\u00e7a de fus\u00e3o at\u00e9 voc\u00ea se sentir seguro.<\/p>"
+                  },
+                  {
+                    "_id": "faq_6",
+                    "tab_title": "Quais s\u00e3o as formas de pagamento e facilidades?",
+                    "tab_content": "<p>N\u00f3s facilitamos para que todos os trabalhadores possam estudar. Oferecemos parcelamento no cart\u00e3o de cr\u00e9dito em at\u00e9 12x, pagamento facilitado por boleto de conv\u00eanio japon\u00eas (Konbini) ou transfer\u00eancia direta com descontos especiais para pagamentos \u00e0 vista. Fale com um de nossos consultores para fazer uma simula\u00e7\u00e3o personalizada.<\/p>"
+                  }
+                ],
+                "icon": {
+                  "value": "fas fa-chevron-down",
+                  "library": "fa-solid"
+                },
+                "icon_active": {
+                  "value": "fas fa-chevron-up",
+                  "library": "fa-solid"
+                },
+                "css_classes": "esj-faq"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s_floating_cta",
+      "elType": "section",
+      "settings": {
+        "content_width": "full",
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        },
+        "html_tag": "div"
+      },
+      "elements": [
+        {
+          "id": "c_floating_cta",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "w_floating_cta",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "MATR\u00cdCULAS ABERTAS",
+                "link": {
+                  "url": "#",
+                  "is_external": false,
+                  "nofollow": false,
+                  "custom_attributes": "data-action|open-lead"
+                },
+                "background_color": "#ff6b00",
+                "button_background_hover_color": "#f59e0b",
+                "button_hover_animation": "grow",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "9999",
+                  "right": "9999",
+                  "bottom": "9999",
+                  "left": "9999",
+                  "isLinked": true
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "24",
+                  "bottom": "16",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Space Grotesk",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 12
+                },
+                "typography_font_weight": "900",
+                "typography_transform": "uppercase",
+                "text_color": "#000000",
+                "boxshadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 8,
+                  "blur": 30,
+                  "spread": 0,
+                  "color": "rgba(255,107,0,0.4)"
+                },
+                "css_classes": "esj-floating-cta",
+                "align": "right"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
