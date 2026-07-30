@@ -18,7 +18,10 @@ export default function TestimonialsSection() {
           </div>
           
           <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
-            Histórias de quem mudou de vida de verdade
+            Histórias de quem{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent">
+              mudou de vida de verdade
+            </span>
           </h2>
           
           <p className="text-zinc-400 text-sm sm:text-base mt-4 font-sans">

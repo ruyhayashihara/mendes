@@ -25,7 +25,10 @@ export default function FaqSection() {
           </div>
           
           <h2 className="font-display font-bold text-3xl sm:text-4xl text-white tracking-tight leading-tight">
-            Tire todas as suas dúvidas sobre o curso
+            Tire todas as suas{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent">
+              dúvidas sobre o curso
+            </span>
           </h2>
           
           <p className="text-zinc-400 text-sm sm:text-base mt-4 font-sans">

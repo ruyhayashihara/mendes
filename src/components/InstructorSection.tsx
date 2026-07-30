@@ -22,7 +22,10 @@ export default function InstructorSection() {
           </div>
           
           <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
-            Conheça o seu instrutor técnico
+            Conheça o seu{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent">
+              instrutor técnico
+            </span>
           </h2>
           
           <p className="text-zinc-400 text-sm sm:text-base mt-4 font-sans">

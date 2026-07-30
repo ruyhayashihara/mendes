@@ -29,7 +29,7 @@ export default function CurriculumSection({ onOpenLeadForm }: CurriculumSectionP
 
   return (
     <section id="cronograma" className="py-24 bg-[#0a0a0c] border-t border-zinc-900 relative">
-      <div className="absolute top-0 left-1/4 w-[300px] h-[300px] bg-brand-primary/5 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-[500px] h-[400px] bg-brand-primary/8 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -41,7 +41,10 @@ export default function CurriculumSection({ onOpenLeadForm }: CurriculumSectionP
           </div>
           
           <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
-            Seu cronograma de progresso técnico
+            Seu cronograma de{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent">
+              progresso técnico
+            </span>
           </h2>
           
           <p className="text-zinc-400 text-sm sm:text-base mt-4 font-sans">
@@ -205,7 +208,7 @@ export default function CurriculumSection({ onOpenLeadForm }: CurriculumSectionP
               </div>
               <button
                 onClick={onOpenLeadForm}
-                className="w-full sm:w-auto bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-xs px-6 py-3.5 rounded-xl transition-all tracking-wider uppercase cursor-pointer"
+                className="w-full sm:w-auto bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-xs px-6 py-3.5 rounded-xl transition-all tracking-wider uppercase shadow-[0_4px_20px_rgba(255,107,0,0.3)] hover:shadow-[0_6px_24px_rgba(255,107,0,0.4)] hover:-translate-y-0.5 transform cursor-pointer"
               >
                 Garantir Minha Matrícula
               </button>

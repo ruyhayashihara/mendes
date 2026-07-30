@@ -51,7 +51,10 @@ export default function SalaryCalculator({ onOpenLeadForm }: SalaryCalculatorPro
           </div>
           
           <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
-            Simule o seu novo salário no Japão
+            Simule o seu{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent">
+              novo salário no Japão
+            </span>
           </h2>
           
           <p className="text-zinc-400 text-sm sm:text-base mt-4 font-sans">
@@ -214,7 +217,7 @@ export default function SalaryCalculator({ onOpenLeadForm }: SalaryCalculatorPro
             <div className="mt-8">
               <button
                 onClick={onOpenLeadForm}
-                className="group w-full bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-sm py-4 rounded-xl transition-all shadow-[0_4px_20px_rgba(255,107,0,0.3)] flex items-center justify-center gap-2 cursor-pointer"
+                className="group w-full bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-sm py-4 rounded-xl transition-all shadow-[0_4px_20px_rgba(255,107,0,0.3)] hover:shadow-[0_6px_24px_rgba(255,107,0,0.4)] hover:-translate-y-0.5 transform flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>QUERO SIMULAR MEU PLANO DE CARREIRA</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />

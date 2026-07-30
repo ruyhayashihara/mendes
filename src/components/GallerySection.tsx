@@ -22,7 +22,7 @@ export default function GallerySection() {
 
   return (
     <section id="galeria" className="py-24 bg-[#070709] border-t border-zinc-900 relative">
-      <div className="absolute top-1/4 right-1/4 w-[400px] h-[400px] bg-brand-primary/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/4 right-1/4 w-[600px] h-[500px] bg-brand-primary/8 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -34,7 +34,10 @@ export default function GallerySection() {
           </div>
           
           <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
-            Nossas Especialidades e Processos
+            Nossas{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent">
+              Especialidades e Processos
+            </span>
           </h2>
           
           <p className="text-zinc-400 text-sm sm:text-base mt-4 font-sans">
