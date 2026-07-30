@@ -38,7 +38,7 @@ export default function Hero({ onOpenLeadForm }: HeroProps) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full my-auto z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           {/* Hero Content Left */}
           <motion.div
             variants={containerVariants}
@@ -69,9 +69,9 @@ export default function Hero({ onOpenLeadForm }: HeroProps) {
               variants={itemVariants}
               className="text-base sm:text-lg text-zinc-300 mb-8 max-w-xl leading-relaxed font-sans"
             >
-              Chega de trabalhar 12 horas em pé em serviços pesados de haken por salários baixos. 
-              Domine os processos <strong className="text-white">TIG, MIG/MAG e Eletrodo</strong> na prática, 
-              com aulas <strong className="text-white">100% em português</strong> aos finais de semana, e conquiste vagas de até <strong className="text-brand-primary">¥2.500/h</strong>.
+              Chega de trabalhar 12 horas em pé em serviços pesados de haken por salários baixos.
+              Domine os processos <strong className="text-white">TIG, MIG/MAG e Eletrodo</strong> na prática,
+              com aulas <strong className="text-white">100% em português</strong> aos finais de semana, e conquiste vagas de até <strong className="text-brand-primary">¥3.000/h</strong>.
             </motion.p>
 
             {/* Micro Badges (Trust Elements) */}
@@ -106,7 +106,7 @@ export default function Hero({ onOpenLeadForm }: HeroProps) {
                 <span>FALAR COM NOSSO CONSULTOR</span>
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </button>
-              
+
               {/* Trust Badge */}
               <div className="flex items-center justify-center gap-2 px-4 py-2 border border-zinc-800/80 bg-zinc-900/40 rounded-xl text-zinc-400 text-xs font-mono">
                 <ShieldCheck className="w-4 h-4 text-emerald-500" />
@@ -124,7 +124,7 @@ export default function Hero({ onOpenLeadForm }: HeroProps) {
           >
             {/* Ambient orange glow behind the image */}
             <div className="absolute inset-0 bg-brand-primary/20 rounded-2xl blur-2xl -z-10 transform scale-95 animate-pulse" />
-            
+
             {/* Main Hero Image */}
             <div className="relative rounded-2xl border border-zinc-800 bg-zinc-900 overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-auto">
               <img
@@ -135,7 +135,7 @@ export default function Hero({ onOpenLeadForm }: HeroProps) {
               />
               {/* Overlay with subtle steel gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-              
+
               {/* Floating Badge (Social Proof) */}
               <div className="absolute bottom-4 left-4 right-4 bg-zinc-950/90 backdrop-blur-md border border-zinc-800/60 p-4 rounded-xl flex items-center gap-3">
                 <div className="bg-brand-primary/10 p-2 rounded-lg text-brand-primary">

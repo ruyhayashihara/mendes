@@ -2,7 +2,7 @@ import { Testimonial, CourseModule, FAQItem, InstructorProfile } from './types';
 import instructorPhoto from './assets/images/regenerated_image_1784544660370.png';
 
 export const STATS = [
-  { value: '¥1.600 - ¥2.500', label: 'Salário Médio por Hora', desc: 'Praticamente o dobro de uma fábrica comum' },
+  { value: '¥1.600 - ¥3.000', label: 'Salário Médio por Hora', desc: 'Praticamente o dobro de uma fábrica comum' },
   { value: '+1.200', label: 'Alunos Formados', desc: 'Brazilienses e latinos atuantes no Japão' },
   { value: '92%', label: 'Taxa de Empregabilidade', desc: 'Alunos contratados logo após formarem' },
   { value: '100%', label: 'Aulas em Português', desc: 'Explicações fáceis e didática direta' },

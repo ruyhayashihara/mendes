@@ -185,10 +185,10 @@ add_action('manage_esj_lead_posts_custom_column', function ($column, $post_id) {
  */
 add_action('wp_head', function () {
     if (is_page('landing-solda') || is_page('escola-de-solda') || is_front_page()) {
-        echo '<meta name="description" content="Escola de Solda no Japão — Treinamento prático de soldagem TIG, MIG/MAG e Eletrodo 100% em português. Aulas aos finais de semana. Conquiste salários de até ¥2.500/hora como soldador profissional certificado JWES.">' . "\n";
+        echo '<meta name="description" content="Escola de Solda no Japão — Treinamento prático de soldagem TIG, MIG/MAG e Eletrodo 100% em português. Aulas aos finais de semana. Conquiste salários de até ¥3.000/hora como soldador profissional certificado JWES.">' . "\n";
         echo '<meta name="keywords" content="escola de solda japão, curso soldagem japão, soldador profissional japão, JWES, TIG MIG MAG, brasileiros no japão, dekassegui">' . "\n";
         echo '<meta property="og:title" content="Escola de Solda no Japão — Torne-se um Soldador Profissional">' . "\n";
-        echo '<meta property="og:description" content="Mude de vida no Japão: treinamento prático de soldagem com aulas 100% em português. Conquiste salários de até ¥2.500/hora.">' . "\n";
+        echo '<meta property="og:description" content="Mude de vida no Japão: treinamento prático de soldagem com aulas 100% em português. Conquiste salários de até ¥3.000/hora.">' . "\n";
         echo '<meta property="og:type" content="website">' . "\n";
     }
 });
