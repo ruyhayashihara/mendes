@@ -7,7 +7,7 @@ interface SalaryCalculatorProps {
 }
 
 export default function SalaryCalculator({ onOpenLeadForm }: SalaryCalculatorProps) {
-  const [currentWage, setCurrentWage] = useState<number>(1150);
+  const [currentWage, setCurrentWage] = useState<number>(3000);
   const [weeklyHours, setWeeklyHours] = useState<number>(40);
   const [overtimeHours, setOvertimeHours] = useState<number>(15);
 
@@ -86,7 +86,7 @@ export default function SalaryCalculator({ onOpenLeadForm }: SalaryCalculatorPro
                 />
                 <div className="flex justify-between text-[11px] text-zinc-500 font-mono">
                   <span>¥1.000/h (Mínimo comum)</span>
-                  <span>¥1.600/h</span>
+                  <span>¥3000/h</span>
                 </div>
               </div>
 
