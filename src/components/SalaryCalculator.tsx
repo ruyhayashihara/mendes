@@ -78,8 +78,8 @@ export default function SalaryCalculator({ onOpenLeadForm }: SalaryCalculatorPro
                 <input
                   type="range"
                   min="1000"
-                  max="1600"
-                  step="25"
+                  max="3000"
+                  step="50"
                   value={currentWage}
                   onChange={(e) => setCurrentWage(Number(e.target.value))}
                   className="w-full h-1.5 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-brand-primary"
