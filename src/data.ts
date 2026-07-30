@@ -22,7 +22,7 @@ export const COMPARISONS = {
   welder: {
     title: 'Soldador Profissional Certificado',
     items: [
-      'Salários elevados (¥1.600 a ¥2.500+/hora)',
+      'Salários elevados (¥1.600 a ¥3.000+/hora)',
       'Trabalho técnico, intelectual e de precisão',
       'Profissão altamente requisitada em todo o Japão',
       'Carreira sólida com aumento salarial contínuo',
