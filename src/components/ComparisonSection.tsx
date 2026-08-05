@@ -139,7 +139,7 @@ export default function ComparisonSection({ onOpenLeadForm }: ComparisonSectionP
                 <span>QUERO ESTA EVOLUÇÃO NA MINHA VIDA</span>
               </button>
               <p className="text-zinc-400 text-[11px] font-mono text-center">
-                Vagas disponíveis em Gunma, Aichi, Shizuoka e mais.
+                Atualmente, oferecemos curso presencial em Kakogawa, Hyogo, Japão. Para mais informações, entre em contato conosco.
               </p>
             </div>
           </motion.div>

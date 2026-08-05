@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Send, Sparkles, PhoneCall, CheckCircle, Database, Trash2, Download } from 'lucide-react';
 import { LeadFormData } from '../types';
@@ -89,13 +89,13 @@ export default function LeadCaptureModal({ isOpen, onClose }: LeadCaptureModalPr
 
   // Build redirection link to WhatsApp
   const handleWhatsAppRedirect = () => {
-    const schoolPhone = '818012345678'; // Imaginary WhatsApp of Escola de Solda no Japão
+    const schoolPhone = '818012345678'; // Imaginary WhatsApp of Centro Mendes de Soldagem
     
     const experienceText = formData.hasExperience 
       ? 'Sim, já possuo alguma experiência prévia.' 
       : 'Não, pretendo começar do absoluto zero.';
 
-    const message = `Olá Professor William! Gostaria de falar com um consultor da Escola de Solda no Japão sobre vagas e matrículas.
+    const message = `Olá Professor William! Gostaria de falar com um consultor do Centro Mendes de Soldagem sobre vagas e matrículas.
 
 Aqui estão os meus dados para agilizar o atendimento:
 • Nome: ${formData.name}
@@ -347,7 +347,7 @@ Fico no aguardo do contato! Obrigado.`;
                       <div className="space-y-2">
                         <h4 className="font-display font-bold text-xl text-white">Inscrição Prévia Realizada!</h4>
                         <p className="text-zinc-400 text-xs sm:text-sm font-sans max-w-xs mx-auto leading-relaxed">
-                          Seus dados foram salvos com sucesso no cofre da Escola de Solda. 
+                          Seus dados foram salvos com sucesso no cofre do Centro Mendes de Soldagem. 
                         </p>
                       </div>
 

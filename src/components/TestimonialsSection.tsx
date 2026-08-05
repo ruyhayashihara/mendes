@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+﻿import { motion } from 'motion/react';
 import { Star, MessageSquare, Quote, MapPin } from 'lucide-react';
 import { TESTIMONIALS } from '../data';
 
@@ -92,7 +92,7 @@ export default function TestimonialsSection() {
         {/* Dynamic call to action prompt */}
         <div className="mt-16 text-center max-w-lg mx-auto bg-zinc-950/60 border border-zinc-800/80 p-5 rounded-xl">
           <p className="text-zinc-400 text-xs sm:text-sm font-sans">
-            Você também pode ser a nossa próxima história de sucesso. Faça parte da Escola de Solda no Japão e conquiste a sua valorização profissional.
+            Você também pode ser a nossa próxima história de sucesso. Faça parte do Centro Mendes de Soldagem e conquiste a sua valorização profissional.
           </p>
         </div>
 

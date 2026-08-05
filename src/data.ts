@@ -1,4 +1,4 @@
-import { Testimonial, CourseModule, FAQItem, InstructorProfile } from './types';
+﻿import { Testimonial, CourseModule, FAQItem, InstructorProfile } from './types';
 import instructorPhoto from './assets/images/regenerated_image_1784544660370.png';
 
 export const STATS = [
@@ -38,7 +38,7 @@ export const TESTIMONIALS: Testimonial[] = [
     location: 'Ota, Gunma',
     previousJob: 'Operador de Prensa (¥1.150/h)',
     currentJob: 'Soldador TIG de Precisão (¥1.980/h)',
-    text: 'Trabalhava 12h por dia na prensa, exausto e sem perspectiva alguma de melhorar. O curso da Escola de Solda no Japão mudou a minha vida completamente. Aprendi solda TIG do absoluto zero. O suporte em português foi essencial porque meu japonês é básico. Hoje ganho quase o dobro, tenho finais de semana livres e sou respeitado na fábrica. Valeu cada iene investido!',
+    text: 'Trabalhava 12h por dia na prensa, exausto e sem perspectiva alguma de melhorar. O curso do Centro Mendes de Soldagem mudou a minha vida completamente. Aprendi solda TIG do absoluto zero. O suporte em português foi essencial porque meu japonês é básico. Hoje ganho quase o dobro, tenho finais de semana livres e sou respeitado na fábrica. Valeu cada iene investido!',
     rating: 5,
   },
   {
@@ -56,7 +56,7 @@ export const TESTIMONIALS: Testimonial[] = [
     location: 'Hamamatsu, Shizuoka',
     previousJob: 'Embaladora de Bento (¥1.050/h)',
     currentJob: 'Soldadora TIG em Inox (¥1.750/h)',
-    text: 'Sempre achei que soldagem era uma profissão estritamente masculina, mas a Escola de Solda me acolheu de forma fantástica. O Professor William me ensinou a técnica fina de precisão na soldagem TIG de aço inox. Hoje trabalho em uma fábrica limpa, soldando peças de alta tecnologia. Conquistei minha independência financeira aqui no Japão!',
+    text: 'Sempre achei que soldagem era uma profissão estritamente masculina, mas o Centro Mendes de Soldagem me acolheu de forma fantástica. O Professor William me ensinou a técnica fina de precisão na soldagem TIG de aço inox. Hoje trabalho em uma fábrica limpa, soldando peças de alta tecnologia. Conquistei minha independência financeira aqui no Japão!',
     rating: 5,
   },
   {
@@ -140,7 +140,7 @@ export const INSTRUCTOR: InstructorProfile = {
     'Mais de 1.200 soldadores treinados, certificados e empregados no Japão',
     'Especialista Convidado em Métodos de Soldagem TIG de Alta Precisão',
   ],
-  bio: 'Nascido no Brasil, William migrou para o Japão em 2008 como tantos outros dekasseguis. Enfrentou anos trabalhando 12 horas diárias em linhas exaustivas de montagem de autopeças por baixos salários. Determinado a mudar seu destino, investiu seu tempo e recursos no aprendizado técnico da soldagem industrial. Após conquistar as maiores licenças estatais do Japão e trabalhar como soldador sênior em estaleiros e fábricas de alta confiabilidade, decidiu fundar a Escola de Solda no Japão. Sua paixão é capacitar brasileiros para que conquistem independência financeira, estabilidade profissional e saiam de forma definitiva da rotina maçante das fábricas comuns.',
+  bio: 'Nascido no Brasil, William migrou para o Japão em 2008 como tantos outros dekasseguis. Enfrentou anos trabalhando 12 horas diárias em linhas exaustivas de montagem de autopeças por baixos salários. Determinado a mudar seu destino, investiu seu tempo e recursos no aprendizado técnico da soldagem industrial. Após conquistar as maiores licenças estatais do Japão e trabalhar como soldador sênior em estaleiros e fábricas de alta confiabilidade, decidiu fundar o Centro Mendes de Soldagem. Sua paixão é capacitar brasileiros para que conquistem independência financeira, estabilidade profissional e saiam de forma definitiva da rotina maçante das fábricas comuns.',
   trajectory: [
     {
       year: '2008',
@@ -164,7 +164,7 @@ export const INSTRUCTOR: InstructorProfile = {
     },
     {
       year: '2021',
-      title: 'Nascimento da Escola de Solda',
+      title: 'Nascimento do Centro Mendes de Soldagem',
       description: 'Fundou o centro de treinamento prático 100% em português com o objetivo de gerar empregabilidade real para a comunidade estrangeira no Japão.',
     },
   ],

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Award, ShieldCheck, Flame, ChevronRight, GraduationCap, Briefcase } from 'lucide-react';
 import { INSTRUCTOR } from '../data';
@@ -29,7 +29,7 @@ export default function InstructorSection() {
           </h2>
           
           <p className="text-zinc-400 text-sm sm:text-base mt-4 font-sans">
-            A Escola de Solda no Japão foi desenhada por quem sentiu na pele as dificuldades do trabalhador estrangeiro e conquistou o topo na metalurgia japonesa.
+            O Centro Mendes de Soldagem foi desenhado por quem sentiu na pele as dificuldades do trabalhador estrangeiro e conquistou o topo na metalurgia japonesa.
           </p>
         </div>
 
