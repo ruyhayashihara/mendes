@@ -2,7 +2,11 @@
 import { Star, MessageSquare, Quote, MapPin } from 'lucide-react';
 import { TESTIMONIALS } from '../data';
 
-export default function TestimonialsSection() {
+interface TestimonialsSectionProps {
+  onOpenLeadForm: () => void;
+}
+
+export default function TestimonialsSection({ onOpenLeadForm }: TestimonialsSectionProps) {
   return (
     <section id="depoimentos" className="py-24 bg-[#0a0a0c] border-y border-zinc-900 relative">
       {/* Decorative radial gradients */}
@@ -36,6 +40,7 @@ export default function TestimonialsSection() {
               key={testimonial.id}
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ y: -6, transition: { type: 'spring', stiffness: 300, damping: 20 } }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1, duration: 0.4 }}
               className="bg-zinc-950/50 border border-zinc-800/80 p-6 sm:p-8 rounded-2xl relative hover:border-zinc-700/80 transition-colors flex flex-col justify-between"
@@ -90,10 +95,16 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Dynamic call to action prompt */}
-        <div className="mt-16 text-center max-w-lg mx-auto bg-zinc-950/60 border border-zinc-800/80 p-5 rounded-xl">
+        <div className="mt-16 text-center max-w-lg mx-auto bg-zinc-950/60 border border-zinc-800/80 p-6 rounded-xl">
           <p className="text-zinc-400 text-xs sm:text-sm font-sans">
             Você também pode ser a nossa próxima história de sucesso. Faça parte do Centro Mendes de Soldagem e conquiste a sua valorização profissional.
           </p>
+          <button
+            onClick={onOpenLeadForm}
+            className="mt-5 bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-sm px-8 py-3.5 rounded-xl transition-all transform hover:-translate-y-0.5 shadow-[0_6px_24px_rgba(255,107,0,0.4)] cursor-pointer"
+          >
+            QUERO MUDAR DE VIDA TAMBÉM
+          </button>
         </div>
 
       </div>

@@ -10,22 +10,24 @@ interface CurriculumSectionProps {
 export default function CurriculumSection({ onOpenLeadForm }: CurriculumSectionProps) {
   const [activeModuleIndex, setActiveModuleIndex] = useState<number>(0);
   
-  // State to simulate progress checking by the user
-  const [checkedLessons, setCheckedLessons] = useState<Record<string, boolean>>({});
+  // State to simulate progress checking by the user (lessons + skills)
+  const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>({});
 
-  const handleToggleLesson = (lessonId: string) => {
-    setCheckedLessons(prev => ({
+  const handleToggleItem = (itemId: string) => {
+    setCheckedItems(prev => ({
       ...prev,
-      [lessonId]: !prev[lessonId],
+      [itemId]: !prev[itemId],
     }));
   };
 
   const activeModule = COURSE_MODULES[activeModuleIndex];
 
-  // Calculate local progress for the selected module
-  const moduleLessons = activeModule.lessons.map((lesson, idx) => `${activeModule.id}-lesson-${idx}`);
-  const checkedCountInActiveModule = moduleLessons.filter(id => checkedLessons[id]).length;
-  const progressPercent = Math.round((checkedCountInActiveModule / moduleLessons.length) * 100);
+  // Calculate local progress for the selected module (aulas + habilidades)
+  const lessonIds = activeModule.lessons.map((_, idx) => `${activeModule.id}-lesson-${idx}`);
+  const skillIds = activeModule.skillsLearned.map((_, idx) => `${activeModule.id}-skill-${idx}`);
+  const allItemIds = [...lessonIds, ...skillIds];
+  const checkedCountInActiveModule = allItemIds.filter(id => checkedItems[id]).length;
+  const progressPercent = Math.round((checkedCountInActiveModule / allItemIds.length) * 100);
 
   return (
     <section id="cronograma" className="py-24 bg-[#0a0a0c] border-t border-zinc-900 relative">
@@ -150,7 +152,7 @@ export default function CurriculumSection({ onOpenLeadForm }: CurriculumSectionP
                     />
                   </div>
                   <p className="text-[10px] text-zinc-500 font-mono mt-1.5 text-center sm:text-left">
-                    💡 Clique nas aulas abaixo para marcar como concluídas e ver o seu progresso simulado subir!
+                    💡 Clique nas aulas e habilidades técnicas abaixo para marcar suas conquistas e ver o seu progresso simulado subir!
                   </p>
                 </div>
 
@@ -160,11 +162,11 @@ export default function CurriculumSection({ onOpenLeadForm }: CurriculumSectionP
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {activeModule.lessons.map((lesson, idx) => {
                       const lessonId = `${activeModule.id}-lesson-${idx}`;
-                      const isChecked = !!checkedLessons[lessonId];
+                      const isChecked = !!checkedItems[lessonId];
                       return (
                         <button
                           key={idx}
-                          onClick={() => handleToggleLesson(lessonId)}
+                          onClick={() => handleToggleItem(lessonId)}
                           className={`text-left p-3.5 rounded-xl border transition-all flex items-start gap-3 cursor-pointer ${
                             isChecked
                               ? 'bg-brand-primary/5 border-brand-primary/40 text-white'
@@ -187,12 +189,24 @@ export default function CurriculumSection({ onOpenLeadForm }: CurriculumSectionP
                 <div className="border-t border-zinc-900 pt-5 mt-2">
                   <span className="font-mono text-xs text-zinc-400 block uppercase font-bold tracking-wider mb-2">Habilidades Técnicas que Você Conquista:</span>
                   <div className="flex flex-wrap gap-2">
-                    {activeModule.skillsLearned.map((skill, idx) => (
-                      <span key={idx} className="bg-zinc-900 border border-zinc-800 px-3 py-1.5 rounded-lg text-xs font-mono font-medium text-zinc-300 flex items-center gap-1.5">
-                        <Award className="w-3.5 h-3.5 text-brand-secondary" />
-                        {skill}
-                      </span>
-                    ))}
+                    {activeModule.skillsLearned.map((skill, idx) => {
+                      const skillId = `${activeModule.id}-skill-${idx}`;
+                      const isChecked = !!checkedItems[skillId];
+                      return (
+                        <button
+                          key={idx}
+                          onClick={() => handleToggleItem(skillId)}
+                          className={`px-3 py-1.5 rounded-lg text-xs font-mono font-medium flex items-center gap-1.5 border transition-all cursor-pointer ${
+                            isChecked
+                              ? 'bg-brand-primary/10 border-brand-primary/50 text-brand-primary'
+                              : 'bg-zinc-900 border-zinc-800 text-zinc-300 hover:bg-zinc-800/70 hover:border-zinc-600 hover:text-white'
+                          }`}
+                        >
+                          <Award className={`w-3.5 h-3.5 ${isChecked ? 'text-brand-primary' : 'text-brand-secondary'}`} />
+                          {skill}
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
               </motion.div>

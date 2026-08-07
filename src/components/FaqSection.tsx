@@ -3,7 +3,11 @@ import { motion, AnimatePresence } from 'motion/react';
 import { HelpCircle, ChevronDown, ChevronUp } from 'lucide-react';
 import { FAQ_ITEMS } from '../data';
 
-export default function FaqSection() {
+interface FaqSectionProps {
+  onOpenLeadForm: () => void;
+}
+
+export default function FaqSection({ onOpenLeadForm }: FaqSectionProps) {
   const [openId, setOpenId] = useState<string | null>(FAQ_ITEMS[0].id);
 
   const handleToggle = (id: string) => {
@@ -92,6 +96,12 @@ export default function FaqSection() {
           <p className="text-xs text-zinc-500 font-mono">
             Sua dúvida não está listada aqui? Fale diretamente com a gente no WhatsApp para obter atendimento personalizado.
           </p>
+          <button
+            onClick={onOpenLeadForm}
+            className="mt-5 bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-sm px-8 py-3.5 rounded-xl transition-all transform hover:-translate-y-0.5 shadow-[0_6px_24px_rgba(255,107,0,0.4)] cursor-pointer"
+          >
+            FALAR COM UM CONSULTOR
+          </button>
         </div>
 
       </div>

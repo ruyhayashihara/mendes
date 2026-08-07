@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import Header from './components/Header';
+import ScrollProgress from './components/ScrollProgress';
+import Marquee from './components/Marquee';
 import Hero from './components/Hero';
 import ComparisonSection from './components/ComparisonSection';
 import SalaryCalculator from './components/SalaryCalculator';
@@ -25,7 +27,10 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen bg-[#0a0a0c] text-zinc-100 flex flex-col justify-between overflow-x-hidden antialiased font-sans selection:bg-brand-primary selection:text-black">
-      
+
+      {/* Scroll progress indicator */}
+      <ScrollProgress />
+
       {/* Header Navigation */}
       <Header onOpenLeadForm={handleOpenLeadModal} />
 
@@ -33,6 +38,9 @@ export default function App() {
       <main className="flex-1 flex flex-col">
         {/* 1. Hero Fold with stats */}
         <Hero onOpenLeadForm={handleOpenLeadModal} />
+
+        {/* 1.5. Animated process strip */}
+        <Marquee />
 
         {/* 2. Brand Value Comparison (Pain vs. Solution) */}
         <ComparisonSection onOpenLeadForm={handleOpenLeadModal} />
@@ -44,16 +52,16 @@ export default function App() {
         <CurriculumSection onOpenLeadForm={handleOpenLeadModal} />
 
         {/* 4.5. Technique and Equipment Gallery */}
-        <GallerySection />
+        <GallerySection onOpenLeadForm={handleOpenLeadModal} />
 
         {/* 5. Instructor Trajectory and Credentials */}
         <InstructorSection />
 
         {/* 6. Student Testimonials (Social Proof) */}
-        <TestimonialsSection />
+        <TestimonialsSection onOpenLeadForm={handleOpenLeadModal} />
 
         {/* 7. Accordion FAQs */}
-        <FaqSection />
+        <FaqSection onOpenLeadForm={handleOpenLeadModal} />
 
         {/* Bottom Sticky Floating CTA Widget (Mobile-Friendly) */}
         <div className="fixed bottom-6 right-6 z-40">

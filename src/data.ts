@@ -1,9 +1,20 @@
 ﻿import { Testimonial, CourseModule, FAQItem, InstructorProfile } from './types';
-import instructorPhoto from './assets/images/regenerated_image_1784544660370.png';
+import instructorPhoto from './assets/images/regenerated_image_1784544660370.webp';
+
+/** Single source of truth for the school's identity and contact data. */
+export const SCHOOL = {
+  name: 'Centro Mendes de Soldagem',
+  instagram: 'https://www.instagram.com/escoladesoldanojapao/',
+  email: 'suporte@escoladesoldanojapao.com',
+  whatsapp: '819038635421', // +81 90-3863-5421
+  location: 'Kakogawa, Hyogo-ken, Japão',
+  postal: '〒675-0000 (Kakogawa-shi, região de forte presença metalúrgica)',
+  hours: 'Atendimento de Seg a Dom: 9:00h às 21:00h',
+};
 
 export const STATS = [
   { value: '¥1.600 - ¥3.000', label: 'Salário Médio por Hora', desc: 'Praticamente o dobro de uma fábrica comum' },
-  { value: '+1.200', label: 'Alunos Formados', desc: 'Brazilienses e latinos atuantes no Japão' },
+  { value: '+1.200', label: 'Alunos Formados', desc: 'Brasileiros e latinos atuantes no Japão' },
   { value: '92%', label: 'Taxa de Empregabilidade', desc: 'Alunos contratados logo após formarem' },
   { value: '100%', label: 'Aulas em Português', desc: 'Explicações fáceis e didática direta' },
 ];

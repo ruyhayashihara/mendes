@@ -1,10 +1,14 @@
 import { motion } from 'motion/react';
 import { Flame, Sparkles, CheckSquare, Layers } from 'lucide-react';
 
-import weldingBg from '../assets/images/welding_background_1784545356543.jpg';
-import gougingBg from '../assets/images/gouging_background_1784545377668.jpg';
+import weldingBg from '../assets/images/welding_background_1784545356543.webp';
+import gougingBg from '../assets/images/gouging_background_1784545377668.webp';
 
-export default function GallerySection() {
+interface GallerySectionProps {
+  onOpenLeadForm: () => void;
+}
+
+export default function GallerySection({ onOpenLeadForm }: GallerySectionProps) {
   const images = [
     {
       title: 'Soldagem Industrial Avançada',
@@ -52,6 +56,7 @@ export default function GallerySection() {
               key={idx}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ y: -6, transition: { type: 'spring', stiffness: 300, damping: 20 } }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.15, duration: 0.5 }}
               className="group relative bg-zinc-950 border border-zinc-800/80 rounded-2xl overflow-hidden shadow-2xl hover:border-zinc-700/80 transition-all"
@@ -116,6 +121,16 @@ export default function GallerySection() {
             <Sparkles className="w-3.5 h-3.5 text-brand-secondary" />
             Processos homologados pelas maiores licenças industriais do Japão.
           </p>
+        </div>
+
+        {/* Conversion CTA */}
+        <div className="mt-12 text-center">
+          <button
+            onClick={onOpenLeadForm}
+            className="bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-sm px-8 py-4 rounded-xl transition-all transform hover:-translate-y-0.5 shadow-[0_6px_24px_rgba(255,107,0,0.4)] inline-flex items-center gap-2 cursor-pointer"
+          >
+            QUERO TREINAR ESTAS TÉCNICAS
+          </button>
         </div>
 
       </div>

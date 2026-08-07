@@ -2,6 +2,7 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Send, Sparkles, PhoneCall, CheckCircle, Database, Trash2, Download } from 'lucide-react';
 import { LeadFormData } from '../types';
+import { SCHOOL } from '../data';
 
 interface LeadCaptureModalProps {
   isOpen: boolean;
@@ -89,7 +90,7 @@ export default function LeadCaptureModal({ isOpen, onClose }: LeadCaptureModalPr
 
   // Build redirection link to WhatsApp
   const handleWhatsAppRedirect = () => {
-    const schoolPhone = '818012345678'; // Imaginary WhatsApp of Centro Mendes de Soldagem
+    const schoolPhone = SCHOOL.whatsapp;
     
     const experienceText = formData.hasExperience 
       ? 'Sim, já possuo alguma experiência prévia.' 
@@ -352,7 +353,7 @@ Fico no aguardo do contato! Obrigado.`;
                       </div>
 
                       <div className="bg-zinc-900/50 border border-zinc-800 p-4.5 rounded-xl text-left text-xs text-zinc-300 leading-relaxed max-w-sm mx-auto">
-                        🔥 <strong>Próximo Passo Importante:</strong> Clique no botão abaixo para abrir o seu WhatsApp e iniciar o atendimento direto com o Professor Ruy. Seus dados serão enviados de forma automática!
+                        🔥 <strong>Próximo Passo Importante:</strong> Clique no botão abaixo para abrir o seu WhatsApp e iniciar o atendimento direto com o Professor William. Seus dados serão enviados de forma automática!
                       </div>
 
                       <button

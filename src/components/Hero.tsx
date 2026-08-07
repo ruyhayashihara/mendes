@@ -1,14 +1,25 @@
-﻿import { motion } from 'motion/react';
+﻿import { useRef } from 'react';
+import { motion, useScroll, useSpring, useTransform } from 'motion/react';
 import { Flame, CheckCircle, ShieldCheck, ArrowRight, Sparkles } from 'lucide-react';
 import { STATS } from '../data';
+import AnimatedCounter from './AnimatedCounter';
 
-import heroImgSrc from '../assets/images/hero_welding_japan_1784542489665.jpg';
+import heroImgSrc from '../assets/images/hero_welding_japan_1784542489665.webp';
 
 interface HeroProps {
   onOpenLeadForm: () => void;
 }
 
 export default function Hero({ onOpenLeadForm }: HeroProps) {
+  const heroRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ['start start', 'end start'],
+  });
+  const parallaxY = useSpring(
+    useTransform(scrollYProgress, [0, 1], [0, 90]),
+    { stiffness: 100, damping: 30 }
+  );
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -31,7 +42,7 @@ export default function Hero({ onOpenLeadForm }: HeroProps) {
   };
 
   return (
-    <section className="relative min-h-screen pt-28 pb-16 flex flex-col justify-between overflow-hidden bg-[#070709]">
+    <section ref={heroRef} className="relative min-h-screen pt-28 pb-16 flex flex-col justify-between overflow-hidden bg-[#070709]">
       {/* Decorative radial gradients for glowing ambient effect */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-primary/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-20 left-0 w-[400px] h-[400px] bg-orange-600/5 rounded-full blur-[100px] pointer-events-none" />
@@ -127,9 +138,10 @@ export default function Hero({ onOpenLeadForm }: HeroProps) {
 
             {/* Main Hero Image */}
             <div className="relative rounded-2xl border border-zinc-800 bg-zinc-900 overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-auto">
-              <img
+              <motion.img
                 src={heroImgSrc}
                 alt="Soldador trabalhando com faíscas brilhantes"
+                style={{ y: parallaxY, scale: 1.15 }}
                 className="w-full h-full object-cover select-none"
                 referrerPolicy="no-referrer"
               />
@@ -163,7 +175,7 @@ export default function Hero({ onOpenLeadForm }: HeroProps) {
           {STATS.map((stat, i) => (
             <div key={i} className="flex flex-col text-center md:text-left border-r last:border-r-0 border-zinc-800/60 pr-2 last:pr-0">
               <span className="font-display font-extrabold text-2xl sm:text-3xl text-brand-primary tracking-tight">
-                {stat.value}
+                <AnimatedCounter value={stat.value} />
               </span>
               <span className="font-sans font-semibold text-xs sm:text-sm text-white mt-1">
                 {stat.label}

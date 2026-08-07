@@ -1,4 +1,5 @@
 ﻿import { Flame, Instagram, MessageSquare, ShieldCheck, Mail, MapPin } from 'lucide-react';
+import { SCHOOL } from '../data';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -33,7 +34,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-3">
               <a
-                href="https://www.instagram.com/escoladesoldanojapao/"
+                href={SCHOOL.instagram}
                 target="_blank"
                 rel="noreferrer"
                 className="bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-300 hover:text-brand-secondary p-2.5 rounded-xl transition-all"
@@ -55,19 +56,19 @@ export default function Footer() {
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-brand-primary shrink-0 mt-0.5" />
                 <span>
-                  Ota-shi, Gunma-ken, Japão<br />
-                  <span className="text-zinc-500 font-mono text-[10px]">〒373-0000 (Região de forte presença metalúrgica)</span>
+                  {SCHOOL.location}
+                  <span className="text-zinc-500 font-mono text-[10px]">{SCHOOL.postal}</span>
                 </span>
               </div>
 
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-brand-primary shrink-0" />
-                <span>suporte@escoladesoldanojapao.com</span>
+                <span>{SCHOOL.email}</span>
               </div>
 
               <div className="flex items-center gap-2.5">
                 <MessageSquare className="w-4 h-4 text-brand-primary shrink-0" />
-                <span>Atendimento de Seg a Dom: 9:00h às 21:00h</span>
+                <span>{SCHOOL.hours}</span>
               </div>
             </div>
           </div>
