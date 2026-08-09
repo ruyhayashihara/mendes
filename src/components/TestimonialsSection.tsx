@@ -97,7 +97,7 @@ export default function TestimonialsSection({ onOpenLeadForm }: TestimonialsSect
         {/* Dynamic call to action prompt */}
         <div className="mt-16 text-center max-w-lg mx-auto bg-zinc-950/60 border border-zinc-800/80 p-6 rounded-xl">
           <p className="text-zinc-400 text-xs sm:text-sm font-sans">
-            Você também pode ser a nossa próxima história de sucesso. Faça parte do Centro Mendes de Soldagem e conquiste a sua valorização profissional.
+            Você também pode ser a nossa próxima história de sucesso. Faça parte do Centro de Soldagem Mendes e conquiste a sua valorização profissional.
           </p>
           <button
             onClick={onOpenLeadForm}
@@ -111,3 +111,4 @@ export default function TestimonialsSection({ onOpenLeadForm }: TestimonialsSect
     </section>
   );
 }
+

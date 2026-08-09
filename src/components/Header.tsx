@@ -60,7 +60,7 @@ export default function Header({ onOpenLeadForm }: HeaderProps) {
               </div>
               <div className="flex flex-col">
                 <span className="font-display font-bold text-lg leading-none tracking-tight text-white">
-                  CENTRO MENDES DE SOLDAGEM
+                  Centro de Soldagem Mendes
                 </span>
                 <span className="font-mono text-[9px] text-zinc-400 tracking-widest leading-none mt-1">
                   NO JAPÃO • 溶接学校
@@ -162,3 +162,5 @@ export default function Header({ onOpenLeadForm }: HeaderProps) {
     </>
   );
 }
+
+

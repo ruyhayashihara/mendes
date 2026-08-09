@@ -97,7 +97,7 @@ export default function LeadCaptureModal({ isOpen, onClose }: LeadCaptureModalPr
       ? 'Sim, já possuo alguma experiência prévia.' 
       : 'Não, pretendo começar do absoluto zero.';
 
-    const message = `Olá Professor William! Gostaria de falar com um consultor do Centro Mendes de Soldagem sobre vagas e matrículas.
+    const message = `Olá Professor William! Gostaria de falar com um consultor do Centro de Soldagem Mendes sobre vagas e matrículas.
 
 Aqui estão os meus dados para agilizar o atendimento:
 • Nome: ${formData.name}
@@ -370,7 +370,7 @@ Fico no aguardo do contato! Obrigado.`;
                       <div className="space-y-2">
                         <h4 className="font-display font-bold text-xl text-white">Inscrição Prévia Realizada!</h4>
                         <p className="text-zinc-400 text-xs sm:text-sm font-sans max-w-xs mx-auto leading-relaxed">
-                          Seus dados foram salvos com sucesso no cofre do Centro Mendes de Soldagem. 
+                          Seus dados foram salvos com sucesso no cofre do Centro de Soldagem Mendes. 
                         </p>
                       </div>
 
@@ -507,6 +507,7 @@ Fico no aguardo do contato! Obrigado.`;
     </>
   );
 }
+
 
 
 

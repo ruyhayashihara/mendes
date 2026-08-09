@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(npm run dev)",
+      "PowerShell(npm run build)",
+      "PowerShell(git add src/components/LeadCaptureModal.tsx)",
+      "PowerShell(git commit -m \"fix\\(LeadCaptureModal\\): adjust whatsapp redirect for desktop/mobile\")",
+      "PowerShell(git rm -f src/components/LeadCaptureModal.tmp)",
+      "PowerShell(git reset HEAD .claude/settings.json)",
+      "PowerShell(git push origin main)",
+      "PowerShell(\\(Get-Content -Path 'C:\\\\Users\\\\Ruy Imac\\\\Documents\\\\GitHub\\\\mendes\\\\src\\\\components\\\\LeadCaptureModal.tsx' -Raw\\) -replace 'https://web\\\\.whatsapp\\\\.com/send\\\\?phone=', 'https://api.whatsapp.com/send?phone=' | Set-Content -Path 'C:\\\\Users\\\\Ruy Imac\\\\Documents\\\\GitHub\\\\mendes\\\\src\\\\components\\\\LeadCaptureModal.tsx' -Encoding UTF8)",
+      "PowerShell(git commit -m \"fix\\(LeadCaptureModal\\): use api.whatsapp.com instead of web.whatsapp.com to prevent desktop issues\")",
+      "PowerShell(git add .)"
+    ]
+  }
+}

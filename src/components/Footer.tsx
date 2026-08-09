@@ -20,7 +20,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-display font-bold text-base leading-none tracking-tight text-white">
-                  Centro Mendes de Soldagem
+                  Centro de Soldagem Mendes
                 </span>
                 <span className="font-mono text-[9px] text-zinc-400 tracking-widest leading-none mt-1">
                   MUDANDO VIDAS PELA QUALIFICAÇÃO
@@ -93,7 +93,7 @@ export default function Footer() {
 
         {/* Footer Base */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-[10px] text-zinc-500 text-center">
-          <p>© {currentYear} Centro Mendes de Soldagem. Todos os direitos reservados.</p>
+          <p>© {currentYear} Centro de Soldagem Mendes. Todos os direitos reservados.</p>
           <div className="flex items-center gap-4">
             <span className="text-zinc-600">Projetado com foco em alta conversão</span>
             <span>•</span>
@@ -105,3 +105,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+

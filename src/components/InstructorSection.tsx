@@ -29,7 +29,7 @@ export default function InstructorSection() {
           </h2>
           
           <p className="text-zinc-400 text-sm sm:text-base mt-4 font-sans">
-            O Centro Mendes de Soldagem foi desenhado por quem sentiu na pele as dificuldades do trabalhador estrangeiro e conquistou o topo na metalurgia japonesa.
+            O Centro de Soldagem Mendes foi desenhado por quem sentiu na pele as dificuldades do trabalhador estrangeiro e conquistou o topo na metalurgia japonesa.
           </p>
         </div>
 
@@ -154,3 +154,4 @@ export default function InstructorSection() {
     </section>
   );
 }
+

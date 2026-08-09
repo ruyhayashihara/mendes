@@ -154,7 +154,7 @@ export default function Hero({ onOpenLeadForm }: HeroProps) {
                   <Flame className="w-5 h-5 fill-brand-primary" />
                 </div>
                 <div>
-                  <p className="font-display font-bold text-sm text-white leading-tight">Centro Mendes de Soldagem</p>
+                  <p className="font-display font-bold text-sm text-white leading-tight">Centro de Soldagem Mendes</p>
                   <p className="text-xs text-zinc-400 font-mono mt-0.5">Foco na Prática e Empregabilidade Imediata</p>
                 </div>
               </div>
@@ -190,3 +190,5 @@ export default function Hero({ onOpenLeadForm }: HeroProps) {
     </section>
   );
 }
+
+
