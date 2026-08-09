@@ -118,7 +118,7 @@ Fico no aguardo do contato! Obrigado.`;
     // Gerar link correto baseado no dispositivo
     const whatsappUrl = isMobile 
       ? `whatsapp://send?phone=` + schoolPhone + `&text=` + encodedMessage // Force open app on mobile
-      : `https://web.whatsapp.com/send?phone=` + schoolPhone + `&text=` + encodedMessage; // Default to web on desktop
+      : `https://api.whatsapp.com/send?phone=` + schoolPhone + `&text=` + encodedMessage; // Default to web on desktop
       
     // Alternativa caso o whatsapp:// falhe (o usuário será redirecionado para a loja / web)
     const fallbackUrl = `https://wa.me/` + schoolPhone + `?text=` + encodedMessage;
@@ -507,5 +507,6 @@ Fico no aguardo do contato! Obrigado.`;
     </>
   );
 }
+
 
 
