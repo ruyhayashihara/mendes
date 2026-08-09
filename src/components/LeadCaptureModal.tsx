@@ -90,7 +90,8 @@ export default function LeadCaptureModal({ isOpen, onClose }: LeadCaptureModalPr
 
   // Build redirection link to WhatsApp
   const handleWhatsAppRedirect = () => {
-    const schoolPhone = SCHOOL.whatsapp;
+    // Pegando apenas os números
+    const schoolPhone = SCHOOL.whatsapp.replace(/\D/g, ''); 
     
     const experienceText = formData.hasExperience 
       ? 'Sim, já possuo alguma experiência prévia.' 
@@ -105,14 +106,35 @@ Aqui estão os meus dados para agilizar o atendimento:
 • Trabalho Atual: ${formData.currentJob}
 • Tempo de Japão: ${formData.timeInJapan}
 • Tem experiência: ${experienceText}
-${formData.notes ? `• Observações: ${formData.notes}` : ''}
+\${formData.notes ? \• Observações: \$\{formData.notes\}\ : ''\}
 
 Fico no aguardo do contato! Obrigado.`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/${schoolPhone}?text=${encodedMessage}`;
     
-    window.open(whatsappUrl, '_blank');
+    // Detectando se é mobile
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    
+    // Gerar link correto baseado no dispositivo
+    const whatsappUrl = isMobile 
+      ? `whatsapp://send?phone=` + schoolPhone + `&text=` + encodedMessage // Force open app on mobile
+      : `https://web.whatsapp.com/send?phone=` + schoolPhone + `&text=` + encodedMessage; // Default to web on desktop
+      
+    // Alternativa caso o whatsapp:// falhe (o usuário será redirecionado para a loja / web)
+    const fallbackUrl = `https://wa.me/` + schoolPhone + `?text=` + encodedMessage;
+    
+    if (isMobile) {
+      // Tentamos abrir o app nativo no mobile
+      window.location.href = whatsappUrl;
+      // Timeout seguro para caso não abra, mandar pra web
+      setTimeout(() => {
+        window.location.href = fallbackUrl;
+      }, 500);
+    } else {
+      // NO Desktop abrimos no Web Whatsapp sempre (evita bloquear no app sumido do windows)
+      window.open(whatsappUrl, '_blank');
+    }
+    
     onClose();
     // Reset form after submission and delay
     setTimeout(() => {
@@ -485,3 +507,5 @@ Fico no aguardo do contato! Obrigado.`;
     </>
   );
 }
+
+
