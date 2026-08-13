@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { HelpCircle, ChevronDown, ChevronUp } from 'lucide-react';
 import { FAQ_ITEMS } from '../data';
@@ -15,7 +15,7 @@ export default function FaqSection({ onOpenLeadForm }: FaqSectionProps) {
   };
 
   return (
-    <section id="faq" className="py-24 bg-[#070709] relative overflow-hidden">
+    <section id="faq" className="py-16 md:py-24 bg-[#070709] relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-brand-primary/5 rounded-full blur-[120px] pointer-events-none" />
 
@@ -98,7 +98,7 @@ export default function FaqSection({ onOpenLeadForm }: FaqSectionProps) {
           </p>
           <button
             onClick={onOpenLeadForm}
-            className="mt-5 bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-sm px-8 py-3.5 rounded-xl transition-all transform hover:-translate-y-0.5 shadow-[0_6px_24px_rgba(255,107,0,0.4)] cursor-pointer"
+            className="mt-5 bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-sm px-8 py-3.5 rounded-xl transition-all transform hover:-translate-y-0.5 shadow-glow shadow-glow-hover focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2 focus:ring-offset-[#070709] cursor-pointer"
           >
             FALAR COM UM CONSULTOR
           </button>

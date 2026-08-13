@@ -7,7 +7,7 @@ export default function InstructorSection() {
   const [selectedMilestone, setSelectedMilestone] = useState<number>(INSTRUCTOR.trajectory.length - 1);
 
   return (
-    <section id="instrutor" className="py-24 bg-[#070709] relative overflow-hidden">
+    <section id="instrutor" className="py-16 md:py-24 bg-[#070709] relative overflow-hidden">
       {/* Back lighting */}
       <div className="absolute top-1/2 left-0 w-[400px] h-[400px] bg-brand-primary/10 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-amber-600/5 rounded-full blur-[120px] pointer-events-none" />

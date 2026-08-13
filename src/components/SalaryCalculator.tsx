@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { motion } from 'motion/react';
 import { Calculator, ArrowRight, TrendingUp, HandCoins, CalendarCheck } from 'lucide-react';
 
@@ -36,7 +36,7 @@ export default function SalaryCalculator({ onOpenLeadForm }: SalaryCalculatorPro
   };
 
   return (
-    <section id="calculadora" className="py-24 bg-[#070709] relative overflow-hidden">
+    <section id="calculadora" className="py-16 md:py-24 bg-[#070709] relative overflow-hidden">
       {/* Decorative side lights */}
       <div className="absolute top-1/4 right-0 w-[300px] h-[300px] bg-brand-secondary/5 rounded-full blur-[90px] pointer-events-none" />
       <div className="absolute bottom-1/4 left-0 w-[300px] h-[300px] bg-amber-600/5 rounded-full blur-[90px] pointer-events-none" />
@@ -217,7 +217,7 @@ export default function SalaryCalculator({ onOpenLeadForm }: SalaryCalculatorPro
             <div className="mt-8">
               <button
                 onClick={onOpenLeadForm}
-                className="group w-full bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-sm py-4 rounded-xl transition-all shadow-[0_4px_20px_rgba(255,107,0,0.3)] hover:shadow-[0_6px_24px_rgba(255,107,0,0.4)] hover:-translate-y-0.5 transform flex items-center justify-center gap-2 cursor-pointer"
+                className="group w-full bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-sm py-4 rounded-xl transition-all shadow-glow shadow-glow-hover focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2 focus:ring-offset-zinc-950 hover:-translate-y-0.5 transform flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>QUERO SIMULAR MEU PLANO DE CARREIRA</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />

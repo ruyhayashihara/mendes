@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { BookOpen, Clock, Award, CheckCircle, Sparkles, Trophy } from 'lucide-react';
 import { COURSE_MODULES } from '../data';
@@ -30,7 +30,7 @@ export default function CurriculumSection({ onOpenLeadForm }: CurriculumSectionP
   const progressPercent = Math.round((checkedCountInActiveModule / allItemIds.length) * 100);
 
   return (
-    <section id="cronograma" className="py-24 bg-[#0a0a0c] border-t border-zinc-900 relative">
+    <section id="cronograma" className="py-16 md:py-24 bg-[#0a0a0c] border-t border-zinc-900 relative">
       <div className="absolute top-0 left-1/4 w-[500px] h-[400px] bg-brand-primary/8 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -222,7 +222,7 @@ export default function CurriculumSection({ onOpenLeadForm }: CurriculumSectionP
               </div>
               <button
                 onClick={onOpenLeadForm}
-                className="w-full sm:w-auto bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-xs px-6 py-3.5 rounded-xl transition-all tracking-wider uppercase shadow-[0_4px_20px_rgba(255,107,0,0.3)] hover:shadow-[0_6px_24px_rgba(255,107,0,0.4)] hover:-translate-y-0.5 transform cursor-pointer"
+                className="w-full sm:w-auto bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-xs px-6 py-3.5 rounded-xl transition-all tracking-wider uppercase shadow-glow shadow-glow-hover focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2 focus:ring-offset-[#070709] hover:-translate-y-0.5 transform cursor-pointer"
               >
                 Garantir Minha Matrícula
               </button>

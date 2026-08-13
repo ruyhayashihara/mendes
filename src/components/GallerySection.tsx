@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+﻿import { motion } from 'motion/react';
 import { Flame, Sparkles, CheckSquare, Layers } from 'lucide-react';
 
 import weldingBg from '../assets/images/welding_background_1784545356543.webp';
@@ -25,7 +25,7 @@ export default function GallerySection({ onOpenLeadForm }: GallerySectionProps) 
   ];
 
   return (
-    <section id="galeria" className="py-24 bg-[#070709] border-t border-zinc-900 relative">
+    <section id="galeria" className="py-16 md:py-24 bg-[#070709] border-t border-zinc-900 relative">
       <div className="absolute top-1/4 right-1/4 w-[600px] h-[500px] bg-brand-primary/8 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -127,7 +127,7 @@ export default function GallerySection({ onOpenLeadForm }: GallerySectionProps) 
         <div className="mt-12 text-center">
           <button
             onClick={onOpenLeadForm}
-            className="bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-sm px-8 py-4 rounded-xl transition-all transform hover:-translate-y-0.5 shadow-[0_6px_24px_rgba(255,107,0,0.4)] inline-flex items-center gap-2 cursor-pointer"
+            className="bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-sm px-8 py-4 rounded-xl transition-all transform hover:-translate-y-0.5 shadow-glow shadow-glow-hover focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2 focus:ring-offset-[#0a0a0c] inline-flex items-center gap-2 cursor-pointer"
           >
             QUERO TREINAR ESTAS TÉCNICAS
           </button>

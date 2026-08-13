@@ -8,7 +8,7 @@ interface TestimonialsSectionProps {
 
 export default function TestimonialsSection({ onOpenLeadForm }: TestimonialsSectionProps) {
   return (
-    <section id="depoimentos" className="py-24 bg-[#0a0a0c] border-y border-zinc-900 relative">
+    <section id="depoimentos" className="py-16 md:py-24 bg-[#0a0a0c] border-y border-zinc-900 relative">
       {/* Decorative radial gradients */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-brand-primary/5 rounded-full blur-[140px] pointer-events-none" />
 
@@ -101,7 +101,7 @@ export default function TestimonialsSection({ onOpenLeadForm }: TestimonialsSect
           </p>
           <button
             onClick={onOpenLeadForm}
-            className="mt-5 bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-sm px-8 py-3.5 rounded-xl transition-all transform hover:-translate-y-0.5 shadow-[0_6px_24px_rgba(255,107,0,0.4)] cursor-pointer"
+            className="mt-5 bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-sm px-8 py-3.5 rounded-xl transition-all transform hover:-translate-y-0.5 shadow-glow shadow-glow-hover focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2 focus:ring-offset-[#0a0a0c] cursor-pointer"
           >
             QUERO MUDAR DE VIDA TAMBÉM
           </button>

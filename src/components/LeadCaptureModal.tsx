@@ -234,7 +234,7 @@ Fico no aguardo do contato! Obrigado.`;
                           value={formData.name}
                           onChange={handleInputChange}
                           placeholder="Ex: Carlos Silva"
-                          className="w-full bg-zinc-900 border border-zinc-800/80 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brand-primary/60 transition-colors"
+                          className="w-full bg-zinc-900 border border-zinc-800/80 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:ring-1 focus:ring-brand-primary border-transparent focus:border-brand-primary placeholder:text-zinc-500 transition-all"
                         />
                       </div>
 
@@ -250,7 +250,7 @@ Fico no aguardo do contato! Obrigado.`;
                           value={formData.whatsapp}
                           onChange={handleInputChange}
                           placeholder="Ex: 080-1234-5678"
-                          className="w-full bg-zinc-900 border border-zinc-800/80 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brand-primary/60 transition-colors"
+                          className="w-full bg-zinc-900 border border-zinc-800/80 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:ring-1 focus:ring-brand-primary border-transparent focus:border-brand-primary placeholder:text-zinc-500 transition-all"
                         />
                       </div>
 
@@ -335,7 +335,7 @@ Fico no aguardo do contato! Obrigado.`;
                           value={formData.notes}
                           onChange={handleInputChange}
                           placeholder="Ex: Gostaria de saber preços para solda TIG em inox..."
-                          className="w-full bg-zinc-900 border border-zinc-800/80 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-brand-primary/60 transition-colors resize-none"
+                          className="w-full bg-zinc-900 border border-zinc-800/80 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:ring-1 focus:ring-brand-primary border-transparent focus:border-brand-primary placeholder:text-zinc-500 transition-all resize-none"
                         />
                       </div>
 
@@ -380,7 +380,7 @@ Fico no aguardo do contato! Obrigado.`;
 
                       <button
                         onClick={handleWhatsAppRedirect}
-                        className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white font-display font-bold text-sm py-4 rounded-xl shadow-[0_4px_20px_rgba(37,211,102,0.35)] transition-all flex items-center justify-center gap-2 cursor-pointer"
+                        className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white font-display font-bold text-sm py-4 rounded-xl shadow-glow-emerald shadow-glow-emerald-hover focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2 focus:ring-offset-zinc-950 transition-all flex items-center justify-center gap-2 cursor-pointer"
                       >
                         <PhoneCall className="w-4.5 h-4.5 fill-white" />
                         <span>ABRIR WHATSAPP DO PROFESSOR</span>

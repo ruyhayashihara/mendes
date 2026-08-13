@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import Header from './components/Header';
 import ScrollProgress from './components/ScrollProgress';
 import Marquee from './components/Marquee';
@@ -67,7 +67,7 @@ export default function App() {
         <div className="fixed bottom-6 right-6 z-40">
           <button
             onClick={handleOpenLeadModal}
-            className="flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-display font-black text-xs sm:text-sm px-5 py-4 rounded-full shadow-[0_8px_30px_rgba(37,211,102,0.4)] transition-all transform hover:scale-105 active:scale-95 group cursor-pointer"
+            className="flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-display font-black text-xs sm:text-sm px-5 py-4 rounded-full shadow-glow-emerald shadow-glow-emerald-hover focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-[#0a0a0c] transition-all transform hover:scale-105 active:scale-95 group cursor-pointer"
             title="Fale conosco agora"
           >
             <span className="relative flex h-2.5 w-2.5">
@@ -89,3 +89,4 @@ export default function App() {
     </div>
   );
 }
+

@@ -94,7 +94,7 @@ export default function Header({ onOpenLeadForm }: HeaderProps) {
               </a>
               <button
                 onClick={onOpenLeadForm}
-                className="flex items-center gap-2 bg-brand-primary hover:bg-brand-secondary text-black font-bold px-4 py-2 rounded-lg text-sm shadow-[0_4px_14px_rgba(255,107,0,0.35)] transition-all transform hover:-translate-y-0.5 cursor-pointer"
+                className="flex items-center gap-2 bg-brand-primary hover:bg-brand-secondary text-black font-bold px-4 py-2 rounded-lg text-sm shadow-glow shadow-glow-hover transition-all transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2 focus:ring-offset-zinc-950 cursor-pointer"
               >
                 <Phone className="w-4 h-4 fill-black" />
                 <span>Garantir Vaga</span>
@@ -150,7 +150,7 @@ export default function Header({ onOpenLeadForm }: HeaderProps) {
                   setIsMobileMenuOpen(false);
                   onOpenLeadForm();
                 }}
-                className="w-full flex items-center justify-center gap-2 bg-brand-primary hover:bg-brand-secondary text-black font-bold py-3 rounded-lg shadow-lg cursor-pointer"
+                className="w-full flex items-center justify-center gap-2 bg-brand-primary hover:bg-brand-secondary text-black font-bold py-3 rounded-lg shadow-glow cursor-pointer focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2 focus:ring-offset-zinc-950 active:scale-95"
               >
                 <Phone className="w-4 h-4 fill-black" />
                 <span>Garantir Vaga no WhatsApp</span>

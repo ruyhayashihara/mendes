@@ -37,7 +37,7 @@ export default function Footer() {
                 href={SCHOOL.instagram}
                 target="_blank"
                 rel="noreferrer"
-                className="bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-300 hover:text-brand-secondary p-2.5 rounded-xl transition-all"
+                className="bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-300 hover:text-brand-primary hover:border-brand-primary/50 focus:outline-none focus:ring-2 focus:ring-brand-primary p-2.5 rounded-xl transition-all"
                 title="Instagram da Escola"
               >
                 <Instagram className="w-5 h-5" />

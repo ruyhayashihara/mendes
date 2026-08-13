@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+﻿import { motion } from 'motion/react';
 import { ShieldAlert, Star, X, Check } from 'lucide-react';
 import { COMPARISONS } from '../data';
 
@@ -8,7 +8,7 @@ interface ComparisonSectionProps {
 
 export default function ComparisonSection({ onOpenLeadForm }: ComparisonSectionProps) {
   return (
-    <section id="comparativo" className="py-24 bg-[#0a0a0c] border-y border-zinc-900 relative">
+    <section id="comparativo" className="py-16 md:py-24 bg-[#0a0a0c] border-y border-zinc-900 relative">
       {/* Back glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-brand-primary/8 rounded-full blur-[150px] pointer-events-none" />
 
@@ -99,7 +99,7 @@ export default function ComparisonSection({ onOpenLeadForm }: ComparisonSectionP
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="bg-gradient-to-b from-zinc-900 to-zinc-950 border-2 border-brand-primary p-8 rounded-2xl flex flex-col justify-between relative shadow-[0_10px_50px_rgba(255,107,0,0.25)] overflow-hidden ring-1 ring-brand-primary/30"
+            className="bg-gradient-to-b from-zinc-900 to-zinc-950 border-2 border-brand-primary p-8 rounded-2xl flex flex-col justify-between relative shadow-[0_10px_50px_rgba(255,107,0,0.15)] overflow-hidden ring-1 ring-brand-primary/30"
           >
             {/* Corner Ribbon or Highlight Badge */}
             <div className="absolute top-4 right-4 bg-brand-primary text-black font-mono font-black text-[9px] uppercase px-2 py-1 rounded">
@@ -134,7 +134,7 @@ export default function ComparisonSection({ onOpenLeadForm }: ComparisonSectionP
             <div className="border-t border-zinc-800 pt-6 mt-4 flex flex-col gap-4">
               <button
                 onClick={onOpenLeadForm}
-                className="w-full bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-sm py-3.5 rounded-xl transition-all transform hover:-translate-y-0.5 shadow-[0_6px_24px_rgba(255,107,0,0.4)] flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full bg-brand-primary hover:bg-brand-secondary text-black font-display font-black text-sm py-3.5 rounded-xl transition-all transform hover:-translate-y-0.5 shadow-glow shadow-glow-hover focus:outline-none focus:ring-2 focus:ring-brand-primary flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>QUERO ESTA EVOLUÇÃO NA MINHA VIDA</span>
               </button>
