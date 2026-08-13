@@ -38,12 +38,12 @@ export default function InstructorSection() {
           
           {/* Instructor Photo & Experience Badges (Left - 5 cols) */}
           <div className="lg:col-span-5 relative flex justify-center">
-            <div className="relative max-w-sm w-full">
+            <div className="relative w-full max-w-[500px] lg:max-w-none">
               {/* Back ambient frame */}
               <div className="absolute inset-0 bg-brand-primary/20 rounded-3xl blur-2xl -z-10 transform translate-x-2 translate-y-2 animate-pulse" />
               
               {/* Image Container */}
-              <div className="relative rounded-2xl border border-zinc-800 bg-zinc-900 overflow-hidden shadow-2xl aspect-square">
+              <div className="relative rounded-2xl border border-zinc-800 bg-zinc-900 overflow-hidden shadow-2xl w-full max-w-[652px] h-full sm:h-[752px] lg:h-auto lg:aspect-[652/752]">
                 <img
                   src={INSTRUCTOR.photoUrl}
                   alt={INSTRUCTOR.name}
@@ -154,4 +154,7 @@ export default function InstructorSection() {
     </section>
   );
 }
+
+
+
 
