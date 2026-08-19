@@ -14,8 +14,8 @@ export const SCHOOL = {
 
 export const STATS = [
   { value: '¥1.600 - ¥3.000', label: 'Salário Médio por Hora', desc: 'Praticamente o dobro de uma fábrica comum' },
-  { value: '+1.200', label: 'Alunos Formados', desc: 'Brasileiros e latinos atuantes no Japão' },
-  { value: '92%', label: 'Taxa de Empregabilidade', desc: 'Alunos contratados logo após formarem' },
+  { value: '700', label: 'Alunos Formados', desc: 'Brasileiros e latinos atuantes no Japão' },
+  { value: '60%', label: 'Taxa de Empregabilidade', desc: 'Alunos contratados logo após formarem' },
   { value: '100%', label: 'Aulas em Português', desc: 'Explicações fáceis e didática direta' },
 ];
 
@@ -148,7 +148,7 @@ export const INSTRUCTOR: InstructorProfile = {
   certifications: [
     'Certificação JWES Grau Especial (Japan Welding Engineering Society)',
     'Ex-Supervisor Chefe de Soldagem e Controle de Qualidade na Mitsubishi Heavy Industries',
-    'Mais de 1.200 soldadores treinados, certificados e empregados no Japão',
+    'Mais de 700 soldadores treinados, certificados e empregados no Japão',
     'Especialista Convidado em Métodos de Soldagem TIG de Alta Precisão',
   ],
   bio: 'Nascido no Brasil, William migrou para o Japão em 2008 como tantos outros dekasseguis. Enfrentou anos trabalhando 12 horas diárias em linhas exaustivas de montagem de autopeças por baixos salários. Determinado a mudar seu destino, investiu seu tempo e recursos no aprendizado técnico da soldagem industrial. Após conquistar as maiores licenças estatais do Japão e trabalhar como soldador sênior em estaleiros e fábricas de alta confiabilidade, decidiu fundar o Centro de Soldagem Mendes. Sua paixão é capacitar brasileiros para que conquistem independência financeira, estabilidade profissional e saiam de forma definitiva da rotina maçante das fábricas comuns.',

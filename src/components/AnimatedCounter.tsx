@@ -12,9 +12,9 @@ interface ParsedValue {
 }
 
 /**
- * Tries to parse a stat value like "+1.200", "92%" or "100%" into
+ * Tries to parse a stat value like "700", "92%" or "100%" into
  * prefix + integer + suffix. Handles the pt-BR thousands separator ('.')
- * so "+1.200" counts up to 1200 instead of just the first digit.
+ * so "700" counts up to 700 instead of just the first digit.
  * Returns null for interval values (e.g. "¥1.600 - ¥3.000") so they
  * render statically instead of counting a meaningless number.
  */
