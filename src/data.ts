@@ -14,8 +14,8 @@ export const SCHOOL = {
 
 export const STATS = [
   { value: '¥1.600 - ¥3.000', label: 'Salário Médio por Hora', desc: 'Praticamente o dobro de uma fábrica comum' },
-  { value: '700', label: 'Alunos Formados', desc: 'Brasileiros e latinos atuantes no Japão' },
-  { value: '60%', label: 'Taxa de Empregabilidade', desc: 'Alunos contratados logo após formarem' },
+  { value: '+700', label: 'Alunos Formados', desc: 'Brasileiros e latinos atuantes no Japão' },
+  { value: '+60%', label: 'Taxa de Empregabilidade', desc: 'Alunos contratados logo após formarem' },
   { value: '100%', label: 'Aulas em Português', desc: 'Explicações fáceis e didática direta' },
 ];
 
