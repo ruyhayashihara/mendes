@@ -10,7 +10,42 @@
       "PowerShell(git push origin main)",
       "PowerShell(\\(Get-Content -Path 'C:\\\\Users\\\\Ruy Imac\\\\Documents\\\\GitHub\\\\mendes\\\\src\\\\components\\\\LeadCaptureModal.tsx' -Raw\\) -replace 'https://web\\\\.whatsapp\\\\.com/send\\\\?phone=', 'https://api.whatsapp.com/send?phone=' | Set-Content -Path 'C:\\\\Users\\\\Ruy Imac\\\\Documents\\\\GitHub\\\\mendes\\\\src\\\\components\\\\LeadCaptureModal.tsx' -Encoding UTF8)",
       "PowerShell(git commit -m \"fix\\(LeadCaptureModal\\): use api.whatsapp.com instead of web.whatsapp.com to prevent desktop issues\")",
-      "PowerShell(git add .)"
+      "PowerShell(git add .)",
+      "PowerShell(git commit -m \"chore: rename Centro Mendes de Soldagem to Centro de Soldagem Mendes\")",
+      "PowerShell(\\(Get-Content -Path \"C:\\\\Users\\\\Ruy Imac\\\\Documents\\\\GitHub\\\\mendes\\\\src\\\\components\\\\Header.tsx\" -Raw\\) -replace \"Centro de Soldagem Mendes\", \"CENTRO DE SOLDAGEM MENDES\" | Set-Content -Path \"C:\\\\Users\\\\Ruy Imac\\\\Documents\\\\GitHub\\\\mendes\\\\src\\\\components\\\\Header.tsx\" -Encoding UTF8)",
+      "PowerShell(git add src/components/Header.tsx)",
+      "PowerShell(git commit -m \"style: restore header text to uppercase\")",
+      "PowerShell(node \"C:\\\\Users\\\\Ruy Imac\\\\.claude\\\\skills\\\\impeccable\\\\scripts\\\\context.mjs\")",
+      "Read(//c/Users/Ruy Imac/.claude/skills/impeccable/reference/**)",
+      "PowerShell(npx eslint src\\\\components\\\\ComparisonSection.tsx --fix)",
+      "PowerShell([System.IO.File]::ReadAllText\\(\"C:\\\\Users\\\\Ruy Imac\\\\.claude\\\\skills\\\\impeccable\\\\reference\\\\routing.md\"\\))",
+      "PowerShell(node \"C:\\\\Users\\\\Ruy Imac\\\\.claude\\\\skills\\\\impeccable\\\\scripts\\\\context-signals.mjs\")",
+      "PowerShell(node \"C:\\\\Users\\\\Ruy Imac\\\\.claude\\\\skills\\\\impeccable\\\\scripts\\\\detect.mjs\" --json src/App.tsx src/components/ComparisonSection.tsx src/components/CurriculumSection.tsx src/components/FaqSection.tsx src/components/Footer.tsx src/components/GallerySection.tsx src/components/Header.tsx src/components/Hero.tsx src/components/InstructorSection.tsx src/components/LeadCaptureModal.tsx src/components/Marquee.tsx src/components/SalaryCalculator.tsx src/components/TestimonialsSection.tsx src/index.css)",
+      "PowerShell(git add src/components/Hero.tsx src/App.tsx src/index.css)",
+      "PowerShell(curl http://localhost:5001)",
+      "PowerShell(Invoke-WebRequest -Uri \"http://localhost:5001\")",
+      "PowerShell(Invoke-RestMethod -Uri \"http://localhost:5001\" -UseBasicParsing)",
+      "PowerShell(git add src/components/InstructorSection.tsx)",
+      "PowerShell(git commit -m \"fix\\(InstructorSection\\): adjust image container responsive behavior maintaining 652x752 aspect ratio\")",
+      "PowerShell(git add src/App.tsx src/components/Hero.tsx src/components/InstructorSection.tsx)",
+      "PowerShell(git commit -m \"feat: complete Hero section redesign with cinematic edge-to-edge layout and typography fixes\")",
+      "PowerShell(npm install)",
+      "PowerShell(npm list tailwindcss)",
+      "PowerShell(\\(Get-Content src/index.css\\) -replace \"--keyframes-marquee: {\", \"@keyframes marquee {\" | Set-Content src/index.css)",
+      "PowerShell(\\(Get-Content src/index.css\\) -replace \"  @keyframes marquee {\", \"  --keyframes-marquee: {\" | Set-Content src/index.css)",
+      "PowerShell(\\(Get-Content src/index.css\\) -replace \"--keyframes-marquee: {\", \"--default-transition-timing-function: cubic-bezier\\(0.4, 0, 0.2, 1\\);`n  @keyframes marquee {\" -replace \"};`n}\", \"} `n}\" | Set-Content src/index.css)",
+      "Read(//c/Users/**)",
+      "Read(//c/Users/Ruy Imac/.claude/skills/graphify/references/**)",
+      "PowerShell(try { $c = Get-Content \"C:\\\\Users\\\\Ruy Imac\\\\Documents\\\\GitHub\\\\mendes\\\\graphify-out\\\\.graphify_chunk_01.json\" | ConvertFrom-Json; $c.nodes.Count } catch { \"error\" })",
+      "PowerShell(git add src/index.css)",
+      "PowerShell(git commit -m \"fix\\(marquee\\): define @keyframes marquee within @theme block for tailwindcss v4 support\")",
+      "PowerShell(git add CLAUDE.md)",
+      "PowerShell(git commit -m \"docs: add CLAUDE.md with project context and AI Agent rules\")",
+      "PowerShell(try { node --check elementor-export\\\\elementor-custom.js } catch { $_.Exception.Message })",
+      "PowerShell(node --check \"elementor-export\\\\elementor-custom.js\")"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes"
     ]
   }
 }

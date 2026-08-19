@@ -51,7 +51,7 @@ Escola presencial de soldagem industrial no Japão, com aulas 100% em português
 ## Evidence on Hand
 
 - 4 depoimentos reais com nomes, localizações, salários anteriores e atuais
-- Estatísticas: +1.200 alunos formados, 92% empregabilidade, salário médio ¥1.600–¥3.000/h
+- Estatísticas: 700 alunos formados, 60% empregabilidade, salário médio ¥1.600–¥3.000/h
 - Certificações reais do instrutor (JWES, Mitsubishi Heavy Industries)
 - Timeline de carreira do instrutor de 2008 a 2021
 - 4 módulos de curso com carga horária, lições e skills

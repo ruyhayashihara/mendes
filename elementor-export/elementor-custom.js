@@ -1,15 +1,18 @@
-/**
+﻿/**
  * ============================================================
- * ESCOLA DE SOLDA NO JAPÃO — Custom JavaScript para Elementor
+ * ESCOLA DE SOLDA NO JAPÃƒO â€” Custom JavaScript para Elementor
  * ============================================================
  * 
- * Este arquivo contém:
- * 1. Simulador de Salário (Salary Calculator)
+ * Este arquivo contÃ©m:
+ * 1. Simulador de SalÃ¡rio (Salary Calculator)
  * 2. Scroll-to-Section suave
  * 3. Scroll Animations (fade-in on viewport)
  * 4. WhatsApp redirect helper
+ * 5. Elementor Form - integraÃ§Ã£o WhatsApp
+ * 6. Marquee infinito (clona faixa Ãºnica para o loop)
+ * 7. Parallax do Hero (equivalente ao framer-motion)
  * 
- * Instruções: Enfileire este arquivo via functions.php do tema filho
+ * InstruÃ§Ãµes: Enfileire este arquivo via functions.php do tema filho
  * ou adicione via Elementor > Custom Code (Header/Footer script)
  * ============================================================
  */
@@ -129,18 +132,18 @@
     var province = formData.province || '';
     var currentJob = formData.currentJob || '';
     var timeInJapan = formData.timeInJapan || '';
-    var hasExperience = formData.hasExperience ? 'Sim' : 'Não';
+    var hasExperience = formData.hasExperience ? 'Sim' : 'NÃ£o';
     var notes = formData.notes || '';
 
-    var message = 'Olá Professor William! Gostaria de falar com um consultor da Escola de Solda no Japão sobre vagas e matrículas.\n\n' +
-      'Aqui estão os meus dados para agilizar o atendimento:\n' +
-      '• Nome: ' + name + '\n' +
-      '• Telefone: ' + whatsapp + '\n' +
-      '• Província: ' + province + '\n' +
-      '• Trabalho Atual: ' + currentJob + '\n' +
-      '• Tempo de Japão: ' + timeInJapan + '\n' +
-      '• Tem experiência: ' + hasExperience + '\n' +
-      (notes ? '• Observações: ' + notes + '\n' : '') +
+    var message = 'OlÃ¡ Professor William! Gostaria de falar com um consultor da Escola de Solda no JapÃ£o sobre vagas e matrÃ­culas.\n\n' +
+      'Aqui estÃ£o os meus dados para agilizar o atendimento:\n' +
+      'â€¢ Nome: ' + name + '\n' +
+      'â€¢ Telefone: ' + whatsapp + '\n' +
+      'â€¢ ProvÃ­ncia: ' + province + '\n' +
+      'â€¢ Trabalho Atual: ' + currentJob + '\n' +
+      'â€¢ Tempo de JapÃ£o: ' + timeInJapan + '\n' +
+      'â€¢ Tem experiÃªncia: ' + hasExperience + '\n' +
+      (notes ? 'â€¢ ObservaÃ§Ãµes: ' + notes + '\n' : '') +
       '\nFico no aguardo do contato! Obrigado.';
 
     var encodedMessage = encodeURIComponent(message);
@@ -183,8 +186,61 @@
     }
   }
 
+  // ===================== 6. MARQUEE PREP FOR ELEMENTOR =====================
+  // The React build renders the marquee track twice for the infinite loop.
+  // Elementor templates contain a single track, so clone it to keep
+  // `translateX(-50%)` seamless (mirrors the @keyframes marquee in the app).
+  function initElementorMarquee() {
+    const marquees = document.querySelectorAll('.esj-marquee');
+    if (marquees.length === 0) return;
+
+    marquees.forEach(marquee => {
+      if (marquee.children.length === 1) {
+        const clone = marquee.children[0].cloneNode(true);
+        clone.setAttribute('aria-hidden', 'true');
+        marquee.appendChild(clone);
+      }
+    });
+  }
+
+  // ===================== 7. HERO PARALLAX (Framer-Motion equivalent) =====================
+  // Mirrors Hero.tsx useScroll(['start start','end start']) + useSpring(damping 30).
+  // The strength is read from data-parallax (default 90px, matching [0,90]).
+  function initHeroParallax() {
+    const hero = document.querySelector('.esj-hero[data-parallax]');
+    if (!hero) return;
+
+    const bg = hero.querySelector('.esj-hero-bg');
+    if (!bg) return;
+
+    const strength = parseFloat(hero.getAttribute('data-parallax')) || 90;
+
+    function onScroll() {
+      const rect = hero.getBoundingClientRect();
+      const vh = window.innerHeight || document.documentElement.clientHeight;
+      // progress = how far the hero has scrolled out of view (0 at top, 1 fully gone)
+      const progress = Math.min(Math.max((vh - rect.top) / vh, 0), 1);
+      document.documentElement.style.setProperty('--esj-parallax-y', progress * strength + 'px');
+    }
+
+    let ticking = false;
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        window.requestAnimationFrame(function () {
+          onScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+
+    onScroll();
+  }
+
   // ===================== INITIALIZE EVERYTHING =====================
   function init() {
+    initElementorMarquee();
+    initHeroParallax();
     initSalaryCalculator();
     initSmoothScroll();
     initScrollAnimations();
@@ -205,3 +261,4 @@
     });
   }
 })();
+

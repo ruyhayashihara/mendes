@@ -1,0 +1,437 @@
+﻿{
+  "nodes": [
+    {
+      "id": "opencode_skills_impeccable_skill_impeccable",
+      "label": "Impeccable Skill Framework",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_adapt_web_adaptation",
+      "label": "Web Target Adaptation",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\adapt.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_adapt_native_native_adaptation",
+      "label": "Native Target Adaptation",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\adapt.native.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_android_android_platform",
+      "label": "Android Platform UI",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\android.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_animate_motion_design",
+      "label": "Motion Design",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\animate.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_audit_web_audit",
+      "label": "Web Diagnostic Audit",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\audit.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_audit_native_native_audit",
+      "label": "Native Diagnostic Audit",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\audit.native.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_bolder_amplification",
+      "label": "Design Amplification",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\bolder.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_clarify_ux_writing",
+      "label": "UX Writing Clarity",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\clarify.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_colorize_color_strategy",
+      "label": "Color Strategy",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\colorize.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_craft_floor_craft_floor",
+      "label": "Craft Floor (Design Baseline)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\craft-floor.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_craft_craft",
+      "label": "Craft",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\craft.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_critique_design_critique",
+      "label": "Design Critique",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\critique.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_delight_design_delight",
+      "label": "Design Delight",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\delight.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_distill_design_distillation",
+      "label": "Design Distillation",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\distill.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_doctor_impeccable_doctor",
+      "label": "Impeccable Doctor",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\doctor.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_document_design_document",
+      "label": "Design Document",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\document.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_extract_design_extraction",
+      "label": "Design Extraction Flow",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\extract.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_harden_ui_hardening",
+      "label": "UI Hardening",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\harden.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_hooks_design_hook",
+      "label": "Design Detector Hook",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\hooks.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_init_init_flow",
+      "label": "Init Flow",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\init.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_ios_ios_platform",
+      "label": "iOS Platform UI",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\ios.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_layout_layout_design",
+      "label": "Layout Design",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\layout.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_live_setup_live_setup",
+      "label": "Live Mode Setup",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\live-setup.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "opencode_skills_impeccable_reference_live_live_mode",
+      "label": "Live Mode",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\live.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "opencode_skills_impeccable_reference_adapt_web_adaptation",
+      "target": "opencode_skills_impeccable_reference_adapt_native_native_adaptation",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\adapt.md",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_skills_impeccable_reference_adapt_native_native_adaptation",
+      "target": "opencode_skills_impeccable_reference_android_android_platform",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\adapt.native.md",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_skills_impeccable_reference_adapt_native_native_adaptation",
+      "target": "opencode_skills_impeccable_reference_ios_ios_platform",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\adapt.native.md",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_skills_impeccable_reference_animate_motion_design",
+      "target": "opencode_skills_impeccable_reference_android_android_platform",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\animate.md",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_skills_impeccable_reference_animate_motion_design",
+      "target": "opencode_skills_impeccable_reference_ios_ios_platform",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\animate.md",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_skills_impeccable_reference_audit_web_audit",
+      "target": "opencode_skills_impeccable_reference_audit_native_native_audit",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\audit.md",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_skills_impeccable_reference_audit_native_native_audit",
+      "target": "opencode_skills_impeccable_reference_audit_web_audit",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\audit.native.md",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_skills_impeccable_reference_audit_native_native_audit",
+      "target": "opencode_skills_impeccable_reference_android_android_platform",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\audit.native.md",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_skills_impeccable_reference_audit_native_native_audit",
+      "target": "opencode_skills_impeccable_reference_ios_ios_platform",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\audit.native.md",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_skills_impeccable_reference_craft_craft",
+      "target": "opencode_skills_impeccable_reference_init_init_flow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\craft.md",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_skills_impeccable_reference_doctor_impeccable_doctor",
+      "target": "opencode_skills_impeccable_reference_document_design_document",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\doctor.md",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_skills_impeccable_reference_doctor_impeccable_doctor",
+      "target": "opencode_skills_impeccable_reference_init_init_flow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\doctor.md",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_skills_impeccable_reference_hooks_design_hook",
+      "target": "opencode_skills_impeccable_reference_craft_floor_craft_floor",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\hooks.md",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_skills_impeccable_reference_init_init_flow",
+      "target": "opencode_skills_impeccable_reference_document_design_document",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\init.md",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_skills_impeccable_reference_layout_layout_design",
+      "target": "opencode_skills_impeccable_reference_ios_ios_platform",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\layout.md",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_skills_impeccable_reference_layout_layout_design",
+      "target": "opencode_skills_impeccable_reference_android_android_platform",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\layout.md",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_skills_impeccable_reference_live_setup_live_setup",
+      "target": "opencode_skills_impeccable_reference_live_live_mode",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Ruy Imac\\Documents\\GitHub\\mendes\\.opencode\\skills\\impeccable\\reference\\live-setup.md",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
