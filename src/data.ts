@@ -7,8 +7,8 @@ export const SCHOOL = {
   instagram: 'https://www.instagram.com/escoladesoldanojapao/',
   email: 'suporte@escoladesoldanojapao.com',
   whatsapp: '819038635421', // +81 90-3863-5421
-  location: 'Kakogawa, Hyogo-ken, Japão',
-  postal: '〒675-0000 (Kakogawa-shi, região de forte presença metalúrgica)',
+  location: 'Kakogawa, Hyogo-ken, Kakogawa-Shi, Heiso-Cho, Ikejiri 550 Japão',
+  postal: '〒675-1233 (Kakogawa-shi, região de forte presença metalúrgica)',
   hours: 'Atendimento de Seg a Dom: 9:00h às 21:00h',
 };
 
