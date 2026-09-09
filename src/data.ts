@@ -1,4 +1,4 @@
-﻿import { Testimonial, CourseModule, FAQItem, InstructorProfile } from './types';
+import { Testimonial, CourseModule, FAQItem, InstructorProfile } from './types';
 import instructorPhoto from './assets/images/regenerated_image_1784544660370.webp';
 
 /** Single source of truth for the school's identity and contact data. */
@@ -151,7 +151,7 @@ export const INSTRUCTOR: InstructorProfile = {
     'Mais de 700 soldadores treinados, certificados e empregados no Japão',
     'Especialista Convidado em Métodos de Soldagem TIG de Alta Precisão',
   ],
-  bio: 'Nascido no Brasil, William migrou para o Japão em 2008 como tantos outros dekasseguis. Enfrentou anos trabalhando 12 horas diárias em linhas exaustivas de montagem de autopeças por baixos salários. Determinado a mudar seu destino, investiu seu tempo e recursos no aprendizado técnico da soldagem industrial. Após conquistar as maiores licenças estatais do Japão e trabalhar como soldador sênior em estaleiros e fábricas de alta confiabilidade, decidiu fundar o Centro de Soldagem Mendes. Sua paixão é capacitar brasileiros para que conquistem independência financeira, estabilidade profissional e saiam de forma definitiva da rotina maçante das fábricas comuns.',
+  bio: 'William Mendes Pereira, 40 anos, nasceu em Tomé-açu, no estado do Pará, no Brasil e veio para o Japão em 2006, aos 20 anos. Começou a trabalhar com solda no terceiro ano no Japão e, desde então, acumula cerca de 17 anos de experiência. Iniciou também a atividade de ensinar solda logo no primeiro ano, totalizando 16 anos como instrutor. Já formou aproximadamente 700 soldadores. Seu sonho inicial era trabalhar no Japão e depois voltar ao Brasil, mas, com o tempo, passou a focar em ensinar mais pessoas e seguir contribuindo nessa área.',
   trajectory: [
     {
       year: '2008',
