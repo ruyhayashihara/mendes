@@ -154,19 +154,19 @@ export const INSTRUCTOR: InstructorProfile = {
   bio: 'William Mendes Pereira, 40 anos, nasceu em Tomé-açu, no estado do Pará, no Brasil e veio para o Japão em 2006, aos 20 anos. Começou a trabalhar com solda no terceiro ano no Japão e, desde então, acumula cerca de 17 anos de experiência. Iniciou também a atividade de ensinar solda logo no primeiro ano, totalizando 16 anos como instrutor. Já formou aproximadamente 700 soldadores. Seu sonho inicial era trabalhar no Japão e depois voltar ao Brasil, mas, com o tempo, passou a focar em ensinar mais pessoas e seguir contribuindo nessa área.',
   trajectory: [
     {
-      year: '2008',
-      title: 'Chegada ao Japão como Dekassegui',
+      year: '2006',
+      title: 'Chegada ao Japão',
       description: 'Início da jornada trabalhando pesado em metalúrgica geral, operando prensas mecânicas sob alto cansaço físico.',
     },
     {
-      year: '2011',
+      year: '2011'
       title: 'Descoberta da Profissão de Soldagem',
-      description: 'Após longos estudos, conquistou sua primeira licença básica oficial japonesa e ingressou como ajudante de soldador.',
+      description: 'Após longos estudos, conquistou sua primeira licença básica oficial japonesa.',
     },
     {
-      year: '2015',
-      title: 'Destaque e Estaleiros Nacionais',
-      description: 'Contratado por uma das maiores corporações navais do Japão, operando soldagem pesada de precisão MIG e TIG em tanques e navios.',
+      year: '2012',
+      title: 'Início como Instrutor de soldagem',
+      description: 'Começou a ensinar soldagem para amigos e colegas, compartilhando seu conhecimento e experiência.',
     },
     {
       year: '2019',
