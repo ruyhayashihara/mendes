@@ -49,7 +49,7 @@ export const TESTIMONIALS: Testimonial[] = [
     location: 'Ota, Gunma',
     previousJob: 'Operador de Prensa (¥1.150/h)',
     currentJob: 'Soldador TIG de Precisão (¥1.980/h)',
-    text: 'Trabalhava 12h por dia na prensa, exausto e sem perspectiva alguma de melhorar. O curso do Centro de Soldagem Mendes mudou a minha vida completamente. Aprendi solda TIG do absoluto zero. O suporte em português foi essencial porque meu japonês é básico. Hoje ganho quase o dobro, tenho finais de semana livres e sou respeitado na fábrica. Valeu cada iene investido!',
+    text: 'Trabalhava 12h por dia na prensa, exausto e sem perspectiva alguma de melhorar. O curso do Centro de Soldagem Mendes mudou a minha vida completamente. Aprendi solda MAG do absoluto zero. O suporte em português foi essencial porque meu japonês é básico. Hoje ganho quase o dobro, tenho finais de semana livres e sou respeitado na fábrica. Valeu cada iene investido!',
     rating: 5,
   },
   {
