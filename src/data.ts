@@ -66,7 +66,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Priscila Souza',
     location: 'Hamamatsu, Shizuoka',
     previousJob: 'Embaladora de Bento (¥1.050/h)',
-    currentJob: 'Soldadora TIG em Inox (¥1.750/h)',
+    currentJob: 'Soldadora TIG em Inox (¥2.900/h)',
     text: 'Sempre achei que soldagem era uma profissão estritamente masculina, mas o Centro de Soldagem Mendes me acolheu de forma fantástica. O Professor William me ensinou a técnica fina de precisão na soldagem TIG de aço inox. Hoje trabalho em uma fábrica limpa, soldando peças de alta tecnologia. Conquistei minha independência financeira aqui no Japão!',
     rating: 5,
   },
