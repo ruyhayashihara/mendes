@@ -46,9 +46,9 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: '1',
     name: 'Thiago Oliveira',
-    location: 'Ota, Gunma',
+    location: 'Suzuka, Mie',
     previousJob: 'Operador de Prensa (¥1.150/h)',
-    currentJob: 'Soldador TIG de Precisão (¥1.980/h)',
+    currentJob: 'Soldador MAG de Precisão (¥2.600/h)',
     text: 'Trabalhava 12h por dia na prensa, exausto e sem perspectiva alguma de melhorar. O curso do Centro de Soldagem Mendes mudou a minha vida completamente. Aprendi solda MAG do absoluto zero. O suporte em português foi essencial porque meu japonês é básico. Hoje ganho quase o dobro, tenho finais de semana livres e sou respeitado na fábrica. Valeu cada iene investido!',
     rating: 5,
   },
@@ -57,8 +57,8 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Marcos Tanaka',
     location: 'Toyohashi, Aichi',
     previousJob: 'Separador de Peças (¥1.200/h)',
-    currentJob: 'Soldador MIG/MAG Industrial (¥1.850/h)',
-    text: 'Super recomendo o curso do Professor William! Ele ensina com muita paciência e didática impecável. As cabines de treino são individuais e idênticas às das grandes indústrias metalúrgicas japonesas. Consegui tirar a licença oficial da JWES nas primeiras semanas após o curso e fui contratado por indicação direta da escola. Excelente infraestrutura.',
+    currentJob: 'Soldador MAG Industrial (¥2.750/h)',
+    text: 'Super recomendo o curso do Professor William! Ele ensina com muita paciência e didática impecável. Consegui tirar a licença oficial da JWES nas primeiras semanas após o curso e fui contratado por indicação direta da escola. Excelente infraestrutura.',
     rating: 5,
   },
   {
