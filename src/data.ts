@@ -75,7 +75,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Rafael Santos',
     location: 'Yokkaichi, Mie',
     previousJob: 'Operador de Moldagem Plástica (¥1.250/h)',
-    currentJob: 'Soldador Especialista & Inspetor (¥2.200/h)',
+    currentJob: 'Soldador Especialista em UT (¥3.000/h)',
     text: 'O cronograma flexível de finais de semana foi perfeito. Consegui estudar sem precisar pedir as contas do meu serviço antigo. O investimento no curso se pagou em menos de 3 meses de trabalho como soldador profissional. Hoje não dependo mais de agência exploradora, tenho contrato direto (Keiyaku-shain) e estabilidade financeira.',
     rating: 5,
   },
