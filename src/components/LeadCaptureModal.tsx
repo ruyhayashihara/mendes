@@ -1,6 +1,6 @@
-﻿import React, { useState, useEffect } from 'react';
+﻿import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Send, Sparkles, PhoneCall, CheckCircle, Database, Trash2, Download } from 'lucide-react';
+import { X, Send, Sparkles, PhoneCall, CheckCircle } from 'lucide-react';
 import { LeadFormData } from '../types';
 import { SCHOOL } from '../data';
 
@@ -31,20 +31,6 @@ export default function LeadCaptureModal({ isOpen, onClose }: LeadCaptureModalPr
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-  const [showAdminDrawer, setShowAdminDrawer] = useState(false);
-  const [storedLeads, setStoredLeads] = useState<LeadFormData[]>([]);
-
-  // Load leads from LocalStorage for the admin drawer demo
-  useEffect(() => {
-    const leads = localStorage.getItem('escola_solda_leads');
-    if (leads) {
-      try {
-        setStoredLeads(JSON.parse(leads));
-      } catch (e) {
-        console.error('Erro ao ler leads', e);
-      }
-    }
-  }, [isSuccess, showAdminDrawer]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -81,7 +67,6 @@ export default function LeadCaptureModal({ isOpen, onClose }: LeadCaptureModalPr
 
       existingLeads.unshift(newLead);
       localStorage.setItem('escola_solda_leads', JSON.stringify(existingLeads));
-      setStoredLeads(existingLeads);
 
       setIsSubmitting(false);
       setIsSuccess(true);
@@ -151,13 +136,6 @@ Fico no aguardo do contato! Obrigado.`;
     }, 500);
   };
 
-  const handleClearLeads = () => {
-    if (confirm('Deseja excluir permanentemente todos os leads coletados neste navegador?')) {
-      localStorage.removeItem('escola_solda_leads');
-      setStoredLeads([]);
-    }
-  };
-
   return (
     <>
       <AnimatePresence>
@@ -190,23 +168,13 @@ Fico no aguardo do contato! Obrigado.`;
                     Agende sua Consulta Gratuita
                   </span>
                 </div>
-                <div className="flex items-center gap-3">
-                  {/* Quick Admin view trigger */}
-                  <button
-                    onClick={() => setShowAdminDrawer(true)}
-                    className="text-[10px] font-mono text-zinc-500 hover:text-brand-secondary flex items-center gap-1 bg-zinc-900 border border-zinc-800/80 px-2 py-1 rounded cursor-pointer"
-                    title="Ver leads salvos"
-                  >
-                    <Database className="w-3 h-3" />
-                    <span>Vault</span>
-                  </button>
-                  <button
-                    onClick={onClose}
-                    className="text-zinc-500 hover:text-white p-1 rounded-lg transition-colors cursor-pointer"
-                  >
-                    <X className="w-5 h-5" />
-                  </button>
-                </div>
+                <button
+                  onClick={onClose}
+                  className="text-zinc-500 hover:text-white p-1 rounded-lg transition-colors cursor-pointer"
+                  aria-label="Fechar"
+                >
+                  <X className="w-5 h-5" />
+                </button>
               </div>
 
               {/* Scrollable form body */}
@@ -370,7 +338,7 @@ Fico no aguardo do contato! Obrigado.`;
                       <div className="space-y-2">
                         <h4 className="font-display font-bold text-xl text-white">Inscrição Prévia Realizada!</h4>
                         <p className="text-zinc-400 text-xs sm:text-sm font-sans max-w-xs mx-auto leading-relaxed">
-                          Seus dados foram salvos com sucesso no cofre do Centro de Soldagem Mendes. 
+                          Seus dados foram registrados com sucesso no Centro de Soldagem Mendes. 
                         </p>
                       </div>
 
@@ -393,111 +361,6 @@ Fico no aguardo do contato! Obrigado.`;
               {/* Secure note */}
               <div className="bg-zinc-900/30 border-t border-zinc-900/60 p-4 shrink-0 text-center text-[10px] text-zinc-500 font-mono">
                 Sua privacidade é garantida. Seus dados não serão compartilhados com terceiros.
-              </div>
-
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
-
-      {/* ADMIN LEADS VAULT DRAWER OVERLAY */}
-      <AnimatePresence>
-        {showAdminDrawer && (
-          <div className="fixed inset-0 z-[60] flex justify-end">
-            {/* Backdrop */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setShowAdminDrawer(false)}
-              className="absolute inset-0 bg-black/70 backdrop-blur-xs"
-            />
-
-            {/* Drawer Panel */}
-            <motion.div
-              initial={{ x: '100%' }}
-              animate={{ x: 0 }}
-              exit={{ x: '100%' }}
-              transition={{ type: 'tween', duration: 0.3 }}
-              className="relative w-full max-w-md bg-zinc-950 border-l border-zinc-800 h-full shadow-2xl z-10 flex flex-col p-6 overflow-hidden"
-            >
-              {/* Header */}
-              <div className="flex items-center justify-between border-b border-zinc-900 pb-4 mb-4 shrink-0">
-                <div className="flex items-center gap-2">
-                  <Database className="w-5 h-5 text-brand-secondary" />
-                  <span className="font-display font-bold text-base text-white">Leads Vault (Admin Demo)</span>
-                </div>
-                <button
-                  onClick={() => setShowAdminDrawer(false)}
-                  className="text-zinc-500 hover:text-white p-1 rounded cursor-pointer"
-                >
-                  <X className="w-5 h-5" />
-                </button>
-              </div>
-
-              <p className="text-[11px] text-zinc-500 font-mono leading-relaxed mb-4">
-                Esta gaveta demonstra como os leads capturados na Landing Page são gravados de forma segura. Em produção, este painel fica protegido por senha para uso da escola.
-              </p>
-
-              {/* Action bar */}
-              <div className="flex items-center justify-between gap-3 mb-4">
-                <span className="font-mono text-[10px] text-zinc-400 font-bold uppercase">
-                  Total coletado: {storedLeads.length}
-                </span>
-                {storedLeads.length > 0 && (
-                  <div className="flex gap-2">
-                    <button
-                      onClick={handleClearLeads}
-                      className="text-[10px] font-mono text-red-400 hover:text-red-300 flex items-center gap-1 bg-zinc-900 border border-zinc-800/80 px-2 py-1 rounded cursor-pointer"
-                    >
-                      <Trash2 className="w-3 h-3" />
-                      <span>Limpar</span>
-                    </button>
-                  </div>
-                )}
-              </div>
-
-              {/* Leads list */}
-              <div className="flex-1 overflow-y-auto space-y-3 pr-1">
-                {storedLeads.length === 0 ? (
-                  <div className="text-center py-16 text-zinc-600 font-mono text-xs">
-                    Nenhum lead coletado ainda.<br />Submeta o formulário para testar.
-                  </div>
-                ) : (
-                  storedLeads.map((lead: any, idx) => (
-                    <div
-                      key={lead.id || idx}
-                      className="bg-zinc-900/60 border border-zinc-800/80 p-3.5 rounded-xl space-y-2 text-xs text-left"
-                    >
-                      <div className="flex justify-between items-start border-b border-zinc-800/40 pb-2 mb-1.5">
-                        <span className="font-sans font-bold text-white text-sm">{lead.name}</span>
-                        <span className="font-mono text-[9px] text-zinc-500">{lead.createdAt || 'Recente'}</span>
-                      </div>
-                      <div className="grid grid-cols-2 gap-x-2 gap-y-1 font-sans text-zinc-300">
-                        <p><span className="text-zinc-500">Província:</span> {lead.province}</p>
-                        <p><span className="text-zinc-500">WhatsApp:</span> {lead.whatsapp}</p>
-                        <p className="col-span-2"><span className="text-zinc-500">Setor:</span> {lead.currentJob}</p>
-                        <p><span className="text-zinc-500">Tempo JP:</span> {lead.timeInJapan}</p>
-                        <p><span className="text-zinc-500">Exp. Solda:</span> {lead.hasExperience ? 'Sim' : 'Não'}</p>
-                      </div>
-                      {lead.notes && (
-                        <p className="text-[11px] text-zinc-400 bg-zinc-950/40 border border-zinc-900/60 p-2 rounded italic mt-1 font-sans">
-                          "{lead.notes}"
-                        </p>
-                      )}
-                    </div>
-                  ))
-                )}
-              </div>
-
-              {/* Close footer */}
-              <div className="border-t border-zinc-900 pt-4 mt-4 shrink-0">
-                <button
-                  onClick={() => setShowAdminDrawer(false)}
-                  className="w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-300 font-mono text-xs py-2.5 rounded-xl transition-all cursor-pointer"
-                >
-                  Voltar ao Formulário
-                </button>
               </div>
 
             </motion.div>
